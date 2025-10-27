@@ -388,3 +388,4 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\s7h
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\2sf6gvpoed-9g5ivsac5x.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-l0p8l8amvk.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\8fvyuviuy6-v0k3co0ozr.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\ayuna-main.sourcelink.json
