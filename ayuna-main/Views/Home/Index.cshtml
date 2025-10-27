@@ -1,0 +1,243 @@
+﻿@using ayuna_main.ViewModel
+@{
+	ViewData["Title"] = "Ayuna - Home";
+}
+
+@model HomeVM
+
+<!-- slider section start -->
+<section class="slider-section">
+	<div id="carouselExampleFade"
+		 class="carousel slide carousel-fade"
+		 data-bs-ride="carousel"
+		 data-bs-interval="4000">
+		<div class="carousel-inner">
+			@{
+				int i = 0;
+			}
+
+			@foreach (Slider item in Model.sliders)
+			{
+				<div class="carousel-item @(i == 0 ? "active" : "") position-relative">
+					<img src="@item.Image"
+						 class="d-block w-100"
+						 alt="img" />
+					<div class="slider-content position-absolute d-flex flex-column align-items-center justify-content-center gap-2">
+						<h2>@item.Title</h2>
+						<a href="shop.html">Shop</a>
+					</div>
+				</div>
+			}
+
+		</div>
+		<button class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleFade"
+				data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+</section>
+<!-- slider section end -->
+<!-- about section start -->
+@if (ViewBag.AboutCount > 0)
+{
+	<section class="about-section">
+		<div class="title text-center">
+			<h3>About</h3>
+		</div>
+		<div class="container-desc d-flex align-items-center justify-content-between">
+			<div class="about-content w-100">
+				<h2>@Model.about?.Title</h2>
+				<p>
+					@Model.about?.Description
+				</p>
+				<a href="about.html">
+					<span>Read more</span>
+				</a>
+			</div>
+			<div class="w-100">
+				<img class="w-100"
+					 src="@Model.about?.Image"
+					 alt="img" />
+			</div>
+		</div>
+	</section>
+}
+
+<!-- about section end -->
+<!-- product section start -->
+<section class="product-section">
+	<div class="title text-center">
+		<h3>Products</h3>
+	</div>
+	<div class="container-desc d-flex flex-wrap flex-column">
+		<div class="more-products d-flex justify-content-center justify-content-lg-end">
+			<a href="shop.html">
+				<span>More products</span>
+			</a>
+		</div>
+		<div class="row d-flex justify-content-center justify-content-lg-between">
+			<div class="product col-12 col-lg-3">
+				<div class="product-image">
+					<img src="images/product-img-1.jpg" alt="img" />
+				</div>
+				<div class="content">
+					<div class="d-flex justify-content-between align-items-center position-relative">
+						<a href="product-detail.html">Circle Necklace</a>
+						<i class="fa-regular fa-heart"></i>
+					</div>
+					<div class="categorie">
+						<h5>Accessories / Bracelests</h5>
+					</div>
+					<div class="price">
+						<p>52.00$</p>
+					</div>
+				</div>
+				<div class="hover-image">
+					<img src="images/product-img-1.1.jpg" alt="img" />
+				</div>
+				<div class="more-detail">
+					<a href="product-detail.html">Select options</a>
+				</div>
+			</div>
+			<div class="product col-12 col-lg-3">
+				<div class="product-image">
+					<img src="images/product-img-2.jpg" alt="img" />
+				</div>
+				<div class="content">
+					<div class="d-flex justify-content-between align-items-center position-relative">
+						<a href="product-detail.html">Circle Necklace</a>
+						<i class="fa-regular fa-heart"></i>
+					</div>
+					<div class="categorie">
+						<h5>Accessories / Bracelests</h5>
+					</div>
+					<div class="price">
+						<p>52.00$</p>
+					</div>
+				</div>
+				<div class="hover-image">
+					<img src="images/product-img-2.2.jpg" alt="img" />
+				</div>
+				<div class="more-detail">
+					<a href="product-detail.html">Select options</a>
+				</div>
+			</div>
+			<div class="product col-12 col-lg-3">
+				<div class="product-image">
+					<img src="images/product-img-3.jpg" alt="img" />
+				</div>
+				<div class="content">
+					<div class="d-flex justify-content-between align-items-center position-relative">
+						<a href="product-detail.html">Circle Necklace</a>
+						<i class="fa-regular fa-heart"></i>
+					</div>
+					<div class="categorie">
+						<h5>Accessories / Bracelests</h5>
+					</div>
+					<div class="price">
+						<p>52.00$</p>
+					</div>
+				</div>
+				<div class="hover-image">
+					<img src="images/blog-img-11.jpg" alt="img" />
+				</div>
+				<div class="more-detail">
+					<a href="product-detail.html">Select options</a>
+				</div>
+			</div>
+			<div class="product col-12 col-lg-3">
+				<div class="product-image">
+					<img src="images/product-img-4.jpg" alt="img" />
+				</div>
+				<div class="content">
+					<div class="d-flex justify-content-between align-items-center position-relative">
+						<a href="product-detail.html">Circle Necklace</a>
+						<i class="fa-regular fa-heart"></i>
+					</div>
+					<div class="categorie">
+						<h5>Accessories / Bracelests</h5>
+					</div>
+					<div class="price">
+						<p>52.00$</p>
+					</div>
+				</div>
+				<div class="hover-image">
+					<img src="images/product-img-4.2.jpg" alt="img" />
+				</div>
+				<div class="more-detail">
+					<a href="product-detail.html">Select options</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- product section end -->
+<!-- portfolio section start -->
+<section class="portfolio-section">
+	<div class="title text-center">
+		<h3>Portfolio</h3>
+	</div>
+	<div class="container-desc d-flex align-items-center justify-content-between flex-wrap">
+		@foreach (Portfolio item in Model.portfolios)
+		{
+			<a href="portfolio.html">
+			<div class="portfolio-img">
+				<img src="@item.Image" alt="img" />
+				<div class="layout-portfolio"></div>
+			</div>
+		</a>
+		}
+		
+	</div>
+</section>
+<!-- portfolio section end -->
+<!-- gift-card section start -->
+@if(ViewBag.GiftCardCount > 0)
+{
+	<section class="gift-card-section">
+	<div class="container-desc">
+			<div style="background-image: url('@Url.Content(Model.giftCard?.Image)');" class="gift-bg d-flex flex-column flex-lg-row justify-content-center align-items-center text-center">
+			<h2>@Model.giftCard?.Title</h2>
+			<div class="content">
+				<p>
+					@Model.giftCard?.Description
+				</p>
+				<a asp-controller="GiftCart" asp-action="Index">
+					<span> more</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+}
+
+<!-- gift-card section end -->
+<!-- blog section start -->
+<section class="blog-section">
+	<div class="title text-center">
+		<h3>Blog</h3>
+	</div>
+	<div class="container-desc d-flex flex-wrap align-items-center justify-content-center gap-4">
+		@foreach (Blog item in Model.blogs)
+		{
+			<div class="item position-relative">
+			<img class="w-100" src="@item.Image" alt="img" />
+			<div class="text position-absolute d-flex flex-column align-items-center">
+				<h2>@item.Name</h2>
+				<a href="blog.html">More</a>
+			</div>
+		</div>
+		}		
+	</div>
+</section>
+<!-- blog section end -->

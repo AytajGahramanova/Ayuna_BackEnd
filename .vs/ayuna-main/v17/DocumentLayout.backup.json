@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\giftcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\giftcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\giftcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\giftcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\views\\giftcardpages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\views\\giftcardpages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\giftcardpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\giftcardpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\views\\giftcardpages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\views\\giftcardpages\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 258,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\GiftCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\GiftCart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\GiftCart\\Index.cshtml*",
+              "RelativeToolTip": "ayuna-main\\Views\\GiftCart\\Index.cshtml*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T07:06:04.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GiftCartController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\GiftCartController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\GiftCartController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\GiftCartController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\GiftCartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T07:05:59.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Index.cshtml",
+              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T07:05:43.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Delete.cshtml",
+              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Views\\GiftCardPages\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T07:01:30.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GiftCardPagesController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
+              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T05:44:53.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SlidersController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwG4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T05:28:46.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

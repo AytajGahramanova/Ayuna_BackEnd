@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model List<AboutFaq>
+
+<div class="container-fluid py-4">
+	<div class="row">
+		<div class="col-12">
+			<div class="card my-4">
+				<div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+					<div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3 d-flex justify-content-between align-items-center" style="padding: 0.75rem 1.5rem;">
+						<h6 class="text-white text-capitalize ps-3">About Faq table</h6>
+						<a class="btn btn-info" asp-action="Create">Create</a>
+					</div>
+				</div>
+				<div class="card-body px-0 pb-2">
+					<div class="table-responsive p-0">
+						<table class="table align-items-center mb-0">
+							<thead>
+								<tr>
+									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Id</th>
+									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Title</th>
+									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Description</th>
+									<th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (AboutFaq item in Model)
+								{
+									<tr>
+										<td style="text-align: center;">
+											<div>
+												<p class="text-sm text-secondary mb-0">@item.Id</p>
+											</div>
+										</td>
+										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">
+											<div class="d-flex flex-column justify-content-center">
+												<h6 style="width: 20ch; display: inline-block; overflow: hidden; text-overflow: ellipsis;" class="mb-0 text-sm">@item.Title</h6>
+											</div>
+										</td>
+										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">
+											<div class="d-flex flex-column justify-content-center">
+												<h6 style="width: 20ch; display: inline-block; overflow: hidden; text-overflow: ellipsis;" class="mb-0 text-sm">@item.Description</h6>
+											</div>
+										</td>
+										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">
+											<div>
+												<a asp-route-id="@item.Id" asp-action="Read" class="btn btn-warning">Read</a>
+												<a asp-route-id="@item.Id" asp-action="Update" class="btn btn-success">Update</a>
+												<a asp-route-id="@item.Id" asp-action="Delete" class="btn btn-danger">Delete</a>
+											</div>
+										</td>
+									</tr>
+								}
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,114 @@
+.customer-login {
+    padding: 20px 0 70px;
+
+    h1 {
+        font-weight: 400;
+        color: #141414;
+        font-family: 'Italiana' !important;
+        font-size: 60px;
+        line-height: 1.0952380952em;
+        letter-spacing: -.01em;
+        margin: 25px 0;
+    }
+
+    .account-form {
+        form {
+            border: 1px solid #e5e5e5;
+            padding: 23px 20px 29px;
+            border-radius: 5px;
+
+            .password-container {
+                position: relative;
+                margin-top: 10px;
+
+                label {
+                    margin-bottom: 12px;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 74%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+
+            .login-submit {
+                text-align: right;
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    color: #141414ac;
+
+                }
+            }
+
+            .login-register {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                text-align: start;
+                justify-content: start;
+
+                a {
+                    color: #141414;
+                    font-size: 15px;
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .item {
+
+            label {
+                font-size: 15px;
+                line-height: 12px;
+                margin-bottom: 12px;
+            }
+        }
+
+        input {
+            border: 1px solid #ededed;
+            height: 40px;
+            max-width: 100%;
+            padding: 0 20px;
+            width: 100%;
+            outline: none;
+        }
+
+        .login-submit-btn {
+            background-color: #141414;
+            border: 0;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 21px;
+            padding: 6px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+        }
+    }
+}
+
+
+/*! responsive start  */
+@media(max-width:992px) {
+    .login-wrapper {
+        width: 100% !important;
+
+        .login-submit {
+            flex-direction: column;
+            align-items: start !important;
+            gap: 10px;
+        }
+    }
+}
+
+/*! responsive end  */

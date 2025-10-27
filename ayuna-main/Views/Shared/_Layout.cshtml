@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<base href="~/" />
+	<link rel="icon" href="images/logo-white.png" />
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+		  crossorigin="anonymous" />
+	<!-- font awesome -->
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		  crossorigin="anonymous"
+		  referrerpolicy="no-referrer" />
+	<!-- swiper -->
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Fancybox -->
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+	<link rel="stylesheet" href="./css/about.css" />
+	<link rel="stylesheet" href="./css/blog.css" />
+	<link rel="stylesheet" href="./css/blog-detail.css" />
+	<link rel="stylesheet" href="./css/cart-wishlist.css" />
+	<link rel="stylesheet" href="./css/contact.css" />
+	<link rel="stylesheet" href="./css/error.css" />
+	<link rel="stylesheet" href="./css/gift-card.css" />
+	<link rel="stylesheet" href="./css/login-register.css" />
+	<link rel="stylesheet" href="./css/portfolio.css" />
+	<link rel="stylesheet" href="./css/product-detail.css" />
+	<link rel="stylesheet" href="./css/shop.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+	<!-- scroll top start -->
+	<button class="page-scroll-button d-flex align-items-center justify-content-center">
+		<i class="fa-solid fa-chevron-up"></i>
+	</button>
+	<!-- scroll top end -->
+	<!-- header start -->
+	<header>
+		<div class="container-desc d-flex align-items-center justify-content-between">
+			<div class="h-search d-none d-lg-flex align-items-center gap-2">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input type="text" placeholder="Search" />
+			</div>
+			<div class="h-logo">
+				<a asp-controller="Home" asp-action="Index">
+					<img src="./images/logo-black.png" alt="logo" />
+				</a>
+			</div>
+			<div class="h-right d-flex align-items-center gap-3 gap-lg-4">
+				<div class="dropdown">
+					<button class="dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+						Az
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">En</a></li>
+						<li><a class="dropdown-item" href="#">Ru</a></li>
+					</ul>
+				</div>
+				<div class="user">
+					<a href="login.html"><i class="fa-regular fa-user"></i></a>
+				</div>
+				<div class="wishlist">
+					<a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+				</div>
+				<div class="shop position-relative">
+					<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+					<span class="position-absolute d-flex align-items-center justify-content-center">0</span>
+				</div>
+				<div>
+					<i class="d-block d-lg-none fa-solid fa-bars"
+					   data-bs-toggle="offcanvas"
+					   data-bs-target="#offcanvasTop"></i>
+				</div>
+
+				<div class="offcanvas offcanvas-top"
+					 tabindex="-1"
+					 id="offcanvasTop"
+					 aria-labelledby="offcanvasTopLabel">
+					<div class="offcanvas-header">
+						<button type="button"
+								class="btn-close"
+								data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="d-flex align-items-center justify-content-center offcanvas-body">
+						<ul class="container-desc d-flex flex-column align-items-center justify-content-center gap-2">
+							<li><a class="active-link" href="#">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- nav start -->
+	<nav class="nav d-none d-lg-flex">
+		<ul class="container-desc d-flex align-items-center justify-content-center gap-5">
+			<li><a class="active-link" href="#">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- nav end -->
+	<!-- main start -->
+	<main>
+		@RenderBody()
+	</main>
+	<!-- main end -->
+	<!-- footer start -->
+	<footer>
+		<div class="container-desc">
+			<div class="row">
+				<div class="item col-12 col-lg-3">
+					<div class="d-flex justify-content-center justify-content-lg-start">
+						<a href="#">
+							<img src="images/logo-black.png" alt="logo" />
+						</a>
+					</div>
+					<div>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+							quo velit tempore. Vel dolorem harum nam ipsa sed dolore rem!
+						</p>
+					</div>
+				</div>
+				<div class="item d-flex align-items-center flex-column justify-content-center col-12 col-lg-3">
+					<h3>Links</h3>
+					<ul class="container-desc d-flex flex-column align-items-start align-items-lg-center justify-content-center gap-2">
+						<li><a class="active-link" href="#">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="item d-flex align-items-center flex-column justify-content-center col-12 col-lg-3">
+					<h3>Categories</h3>
+					<ul class="container-desc d-flex flex-column align-items-start align-items-lg-center justify-content-center gap-2">
+						<li><a href="shop.hmtl">Earrings</a></li>
+						<li><a href="shop.html">Rings</a></li>
+						<li><a href="shop.html">Necklace</a></li>
+						<li><a href="shop.html">Bracelets</a></li>
+						<li><a href="shop.html">Accessories</a></li>
+						<li><a href="shop.html">All Jewellery</a></li>
+					</ul>
+				</div>
+				<div class="item d-flex align-items-center flex-column justify-content-between col-12 col-lg-3">
+					<h3>Contact</h3>
+					<form class="d-flex">
+						<input type="email" placeholder="Email" />
+						<button type="submit">Send</button>
+					</form>
+					<div class="footer-contact d-flex align-items-center flex-column gap-3 gap-lg-2">
+						<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+							<div class="d-flex gap-2">
+								<i class="fa-solid fa-phone"></i>
+								<h2>Phone:</h2>
+							</div>
+							<div>
+								<a class="phone" href="tel:+994557150540">+994557150540</a>
+							</div>
+						</div>
+						<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+							<div class="d-flex gap-2">
+								<i class="fa-solid fa-location-dot"></i>
+								<h2>Address:</h2>
+							</div>
+							<div>
+								<span>Azerbaijan, Sumgait</span>
+							</div>
+						</div>
+						<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+							<div class="d-flex gap-2">
+								<i class="fa-solid fa-envelope"></i>
+								<h2>Email:</h2>
+							</div>
+							<div>
+								<a class="footer-email" href="mailto:ayuna@gmail.com">ayuna@gmail.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"></script>
+	<!-- font awesome -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+			integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+	<!-- swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- fancybox js -->
+	<script src="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

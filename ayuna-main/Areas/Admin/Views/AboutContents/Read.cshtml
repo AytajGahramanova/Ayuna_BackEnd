@@ -1,0 +1,17 @@
+﻿@{
+	ViewData["Title"] = "Read";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model AboutContent
+
+<div class="card mt-4" style="width: 40rem;">
+	<img src="~/images/@Model.Image" class="card-img-top" alt="@Model.Title">
+	<div class="card-body">
+		<h4>@Model.Title</h4>
+		<p class="card-title text-lg">@Model.Description<p />
+		<h4>@Model.PreTitle</h4>
+		<p class="card-title text-lg">@Model.PreDescription<p />
+	</div>
+</div>
+

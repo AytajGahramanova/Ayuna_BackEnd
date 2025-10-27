@@ -1,0 +1,133 @@
+.gift-card {
+    background-color: #F6F4F2;
+    padding: 40px 0;
+
+    .title {
+        h1 {
+            font-weight: 400;
+            color: #141414;
+            font-family: 'Italiana' !important;
+            font-size: 60px;
+            line-height: 1.0952380952em;
+            letter-spacing: -.01em;
+            margin: 25px 0;
+        }
+    }
+
+    .item {
+        width: 400px;
+
+        .img-content {
+            .bg {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(0, 0, 0, 0.12);
+            }
+
+            img {
+                height: 500px;
+                object-fit: cover;
+            }
+
+            span {
+                top: 6%;
+                right: 6%;
+                background-color: #FCF7F4;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.7857142857em;
+                color: #2d2d2d;
+            }
+
+            p {
+                font-family: 'Italiana' !important;
+                font-size: 50px;
+                font-weight: 500;
+                bottom: 1%;
+                left: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 1.7857142857em;
+                color: #FCF7F4;
+            }
+        }
+
+        .text-content {
+            position: relative;
+
+            h3 {
+                font-weight: 400;
+                color: #141414;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1.4666666667em;
+                text-transform: uppercase;
+                letter-spacing: .015em;
+                margin: 10px 0;
+            }
+
+            p,
+            .price {
+                font-size: 12px;
+                color: #141414;
+                letter-spacing: .03em;
+                text-transform: capitalize;
+                margin-bottom: 0;
+            }
+
+            .price {
+                font-weight: 500;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+
+            .add {
+                font-weight: 400;
+                color: #141414;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.4666666667em;
+                text-transform: uppercase;
+                letter-spacing: .015em;
+                margin: 10px 0;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                opacity: 0;
+            }
+        }
+
+        &:hover .price {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        &:hover .add {
+            transform: translateY(-20px);
+            opacity: 1
+        }
+    }
+}
+
+/* ! responsive start */
+@media(max-width:992px) {
+    .gift-card {
+        .item {
+            width: 100%;
+
+            img {
+                height: 400px !important;
+            }
+        }
+    }
+}
+
+/* ! responsive end */

@@ -1,0 +1,109 @@
+﻿@using ayuna_main.ViewModel
+@{
+	ViewData["Title"] = "Ayuna - About";
+}
+
+@model AboutVM
+
+<!-- breadcrumb  -->
+<div class="about-bg">
+	<div class="title text-center">
+		<h1>About Us</h1>
+	</div>
+	<div class="d-flex align-items-center flex-column flex-lg-row">
+		@foreach (AboutBreadcrumb item in Model.aboutBreadcrumbs)
+		{
+			<div class="w-100">
+				<img class="w-100"
+					 src="@item.Image"
+					 alt="img" />
+			</div>
+		}
+
+	</div>
+</div>
+<!-- breadcrumb  -->
+<!-- signiture section start -->
+@if (ViewBag.AboutSignitureCount > 0)
+{
+	<section class="signiture-section">
+		<div class="d-flex align-items-center justify-content-center text-center flex-column">
+			<h4>Why’s it called Aureum beauty</h4>
+			<div class="d-flex flex-column flex-lg-row">
+				<p>
+					@Model.aboutSigniture.Description
+				</p>
+				<div>
+					<img class="w-100" src="@Model.aboutSigniture.Image" alt="img" />
+				</div>
+			</div>
+		</div>
+	</section>
+}
+<!-- signiture section end -->
+<!-- about us section start-->
+@if (ViewBag.AboutContentCount > 0)
+{
+	<section class="about-us-section">
+		<div class="container-desc d-flex flex-column flex-lg-row align-items-center justify-content-between">
+			<div>
+				<img class="w-100" src="@Model.aboutContent.Image" alt="img" />
+			</div>
+			<div class="content d-flex flex-column gap-4">
+				<div>
+					<h2>@Model.aboutContent.Title</h2>
+					<p>
+						@Model.aboutContent.Description
+					</p>
+				</div>
+				<div>
+					<h3>@Model.aboutContent.PreTitle</h3>
+					<span></span>
+					<p>
+						@Model.aboutContent.PreDescription
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+<!-- about us section end-->
+<!-- faq start -->
+<section class="faq">
+	<div class="title text-center">
+		<h1>Faq</h1>
+	</div>
+	<div class="container-desc">
+		<div class="accordion" id="accordionExample">
+			@{
+				int i = 0;
+			}
+			@foreach (var item in Model.aboutFaqs)
+			{
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading-@item.Id">
+						<button class="accordion-button @(i != 0 ? "collapsed" : "")"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapse-@item.Id"
+								aria-expanded="@(i == 0 ? "true" : "false")">
+							@item.Title
+						</button>
+					</h2>
+					<div id="collapse-@item.Id"
+						 class="accordion-collapse collapse @(i == 0 ? "show" : "")"
+						 aria-labelledby="heading-@item.Id"
+						 data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							@item.Description
+						</div>
+					</div>
+				</div>
+				i++;
+			}
+		</div>
+
+	</div>
+</section>
+<!-- faq end -->

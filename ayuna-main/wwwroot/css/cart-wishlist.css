@@ -1,0 +1,160 @@
+.cart-wishlist-wrapper {
+    .table {
+
+        th,
+        td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 15px;
+        }
+
+        th {
+            font-weight: 600 !important;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .delete-icon {
+            color: #dc3545;
+            cursor: pointer;
+            font-size: 18px;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #a71d2a;
+            }
+        }
+    }
+
+    /* --- MOBILE CARD VIEW --- */
+    .cart-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .cart-card {
+            display: flex;
+            gap: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+
+            .cart-card-img {
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                    max-width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+
+            .cart-card-body {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .product-name {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .price,
+                .total {
+                    color: #555;
+                    font-size: 14px;
+                    margin-bottom: 0 !important;
+                }
+
+                .quantity-buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    button {
+                        width: 28px;
+                        height: 28px;
+                        font-size: 16px;
+                    }
+
+                    input {
+                        width: 40px;
+                        height: 28px;
+                        font-size: 14px;
+                    }
+                }
+
+                .delete-icon {
+                    color: #dc3545;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+
+    .total-cart {
+        width: 500px;
+        padding: 10px;
+
+        h3 {
+            border-bottom: 1px solid #dee2e6;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    button {
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        width: 30px;
+        height: 32px;
+        border-radius: 5px;
+        transition: 0.2s;
+
+        &:hover {
+            background: #ddd;
+        }
+    }
+
+    input {
+        width: 45px;
+        height: 33px;
+        background: none;
+        border: 1px solid #e5e5e5;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+.quantity-buttons.mobile {
+    justify-content: start !important;
+}
+
+@media(max-width:768px) {
+    .cart-wishlist-wrapper {
+        & .table {
+            img {
+                width: auto !important;
+            }
+        }
+    }
+}

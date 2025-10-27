@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Read";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model AboutSigniture
+
+<div class="card mt-4" style="width: 40rem;">
+	<img src="~/images/@Model.Image" class="card-img-top" alt="image">
+	<div class="card-body">
+		<p class="card-title text-lg">@Model.Description</>
+	</div>
+</div>
+

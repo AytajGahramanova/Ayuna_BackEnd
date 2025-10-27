@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model GiftCard
+
+<p class="mt-4 font-weight-normal text-2xl">Are you sure delete <strong>@Model.Title </strong>?</p>
+
+<div class="d-flex mt-2 gap-4">
+	<form asp-action="Delete" method="post">
+		<input type="hidden" name="id" value="@Model.Id" />
+		<button class="btn btn-danger" type="submit">Yes</button>
+	</form>
+
+	<a class="btn btn-info" style="width: fit-content" asp-action="Index">No</a>
+</div>
+

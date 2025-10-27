@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Read";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model GiftCardPage
+
+<div class="card mt-4" style="width: 40rem;">
+    <img src="@Model.Image" class="card-img-top" alt="@Model.Title">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-title text-lg">@Model.bgCategory</>
+        <p class="card-title text-lg">@Model.Category</>
+        <p class="card-title text-lg">@Model.Title</>
+        <p class="card-title text-lg">@Model.Price $</>
+    </div>
+</div>
+

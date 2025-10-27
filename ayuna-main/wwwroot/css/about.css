@@ -1,0 +1,216 @@
+/* breadcrumb */
+.about-bg {
+    padding: 25px 0px;
+    border-top: 1px solid #e9e7e7;
+    .title
+
+{
+    h1
+
+{
+    font-weight: 400;
+    color: #141414;
+    font-family: 'Italiana' !important;
+    font-size: 60px;
+    line-height: 1.0952380952em;
+    letter-spacing: -.01em;
+    margin: 25px 0;
+}
+
+}
+
+img {
+    aspect-ratio: 760 / 552;
+    object-fit: cover;
+}
+
+}
+
+/* breadcrumb */
+
+
+/* signiture-section start */
+.signiture-section {
+    margin-top: 40px;
+    h4
+
+{
+    font-weight: 400;
+    color: #141414;
+    font-size: 27px;
+    line-height: 1.2962962963em;
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.7857142857em;
+    font-weight: 400;
+    color: #2d2d2d;
+    margin: 8px 0px;
+    max-width: 600px;
+}
+
+img {
+    max-width: 200px;
+    aspect-ratio: 200 / 200;
+    object-fit: cover;
+}
+
+}
+
+/* signiture-section end */
+
+/* about us section start */
+.about-us-section {
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    img {
+    max-width: 750px;
+    aspect-ratio: 750 / 683;
+    object-fit: cover;
+}
+
+.content {
+    h2
+
+{
+    color: #CBCBCB;
+    font-weight: 400;
+    font-family: 'Italiana' !important;
+    font-size: 85px;
+    line-height: 1.1176470588em;
+    letter-spacing: -.01em;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.7857142857em;
+    font-weight: 400;
+    color: #2d2d2d;
+    margin: 8px 0px;
+    max-width: 600px;
+}
+
+h3 {
+    font-weight: 400;
+    color: #141414;
+    font-size: 22px;
+    line-height: 1.3636363636em;
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    margin: 15px 0;
+}
+
+}
+}
+
+/* about us section end */
+
+
+/* faq start */
+.faq {
+    margin-bottom: 80px;
+    .title
+
+{
+    h1
+
+{
+    font-weight: 400;
+    color: #141414;
+    font-family: 'Italiana' !important;
+    font-size: 60px;
+    line-height: 1.0952380952em;
+    letter-spacing: -.01em;
+    margin: 25px 0;
+}
+
+}
+
+.accordion-button {
+    color: #141414;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4666666667em;
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-body {
+    font-size: 14px;
+    line-height: 1.7857142857em;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+
+.accordion-item {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+    border: none;
+}
+
+}
+
+/* faq end */
+
+/* ! responsive start */
+@media(max-width:992px) {
+    .about-us-section {
+        .content
+
+{
+    h2
+
+{
+    font-size: 60px !important;
+}
+
+h3 {
+    font-size: 19px !important;
+}
+
+p {
+    font-size: 13px !important;
+}
+
+}
+}
+}
+
+/* ! responsive end */
+
+
+/* .faq {
+    .accordion-button {
+        position: relative;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: "+";
+            font-size: 20px;
+            color: #141414;
+            margin-right: 10px;
+            transition: transform 0.2s;
+        }
+
+        &.collapsed::before {
+            content: "+";
+        }
+
+        &:not(.collapsed)::before {
+            content: "-";
+        }
+    }
+} */

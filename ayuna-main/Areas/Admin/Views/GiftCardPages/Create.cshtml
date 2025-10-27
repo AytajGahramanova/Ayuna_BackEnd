@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model GiftCardPage
+
+<form asp-action="Create" method="post" class="mt-4" enctype="multipart/form-data">
+	<div class="mb-3">
+		<label asp-for="formFile" class="form-label">Image</label>
+		<input asp-for="formFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label class="form-label">BgPrice</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="bgPrice" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label class="form-label">BgCategory</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="bgCategory" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Category</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Category" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Title</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Title" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Price</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Price" type="text" class="form-control">
+	</div>
+	<button type="submit" class="btn btn-success">Submit</button>
+	<a class="btn btn-info" asp-action="Index">Go back</a>
+</form>
+

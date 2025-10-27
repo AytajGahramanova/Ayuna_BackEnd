@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Ayuna - Gift-cart";
+}
+
+@model List<GiftCardPage>
+
+<!-- breadcrumb start -->
+<section class="breadcrumb-section">
+    <div class="breadcrumb">
+        <a href="index.html">Home / </a>
+        <a href="#">Gift Card</a>
+    </div>
+    <div class="layer"></div>
+</section>
+<!-- breadcrumb end -->
+<!-- gift-card start -->
+<div class="gift-card">
+    <div class="title text-center">
+        <h1>Gift Card</h1>
+    </div>
+    <div class="container-desc d-flex flex-wrap flex-column flex-lg-row align-items-center justify-content-center gap-0 gap-lg-4 mt-5">
+        @foreach (GiftCardPage item in Model)
+        {
+            <a href="product-detail.html">
+                <div class="item">
+                    <div class="img-content position-relative">
+                        <img class="w-100 position-relative"
+                             src="@item.Image"
+                             alt="img" />
+                        <div class="bg"></div>
+                        <span class="position-absolute">@item.bgPrice $</span>
+                        <p class="position-absolute">@item.bgCategory</p>
+                    </div>
+                    <div class="text-content text-center">
+                        <h3>@item.Category</h3>
+                        <p>@item.Title</p>
+                        <div class="d-flex flex-column">
+                            <span class="price">@item.Price $</span>
+                            <a class="add" href="cart.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</div>
+<!-- gift-card end -->
+

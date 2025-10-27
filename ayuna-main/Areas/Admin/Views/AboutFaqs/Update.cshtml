@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model AboutFaq
+
+<form asp-action="Update" method="post" class="mt-4">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Title" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Description" type="text" class="form-control">
+    </div>
+	<button type="submit" class="btn btn-success">Submit</button>
+	<a class="btn btn-info" asp-action="Index">Go back</a>
+</form>
+
+
