@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\dataaccesslayer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\dataaccesslayer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\viewmodel\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\viewmodel\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 258,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,16 +50,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Models\\Contact.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Models\\Contact.cs",
-              "RelativeToolTip": "ayuna-main\\Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Helpers\\Helper.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Helpers\\Helper.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Helpers\\Helper.cs",
+              "RelativeToolTip": "ayuna-main\\Helpers\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T07:28:45.407Z",
+              "WhenOpened": "2025-10-29T20:15:07.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\ViewModel\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\ViewModel\\RegisterVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\ViewModel\\RegisterVM.cs",
+              "RelativeToolTip": "ayuna-main\\ViewModel\\RegisterVM.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T19:42:46.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T19:39:52.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T19:30:27.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T19:26:28.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Program.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Program.cs",
+              "RelativeToolTip": "ayuna-main\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:28:46.081Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\DataAccessLayer\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\DataAccessLayer\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\DataAccessLayer\\AppDbContext.cs",
+              "RelativeToolTip": "ayuna-main\\DataAccessLayer\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:24:13.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Models\\AppUser.cs",
+              "RelativeToolTip": "ayuna-main\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:22:55.763Z"
             }
           ]
         }

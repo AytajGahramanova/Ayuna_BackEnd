@@ -95,7 +95,6 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\ref\ayuna-main
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\4fadntcnyf-6rgmf7j5iq.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\4zt5tgq02x-4y4lmy980a.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\tsdc9v6ttp-l3kx5dryi3.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\79es1jfk5x-rsyqt9gy5s.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\hvj18jxw6j-sd0wxj7hb8.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a2891yyadc-tgb4l4kjm3.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\61fk560dli-dk6amo8wfb.gz
@@ -386,6 +385,13 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\0js
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\skqk1z7naq-j8x1h8oevw.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\s7hc8bpoi5-zvulxhats1.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\2sf6gvpoed-9g5ivsac5x.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-l0p8l8amvk.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\8fvyuviuy6-v0k3co0ozr.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\ayuna-main.sourcelink.json
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\79es1jfk5x-zqd7awfhh3.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\r89l3r2u2i-wyj2iwvazu.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-jlmiesxyci.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll

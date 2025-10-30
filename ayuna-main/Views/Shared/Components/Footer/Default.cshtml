@@ -1,0 +1,78 @@
+﻿@model FooterVM
+
+<footer>
+	<div class="container-desc">
+		<div class="row">
+			<div class="item col-12 col-lg-3">
+				<div class="d-flex justify-content-center justify-content-lg-start">
+					<a href="#">
+						<img src="images/@Model.footerContent.Logo" alt="logo" />
+					</a>
+				</div>
+				<div>
+					<p>
+						@Model.footerContent.Description
+					</p>
+				</div>
+			</div>
+			<div class="item d-flex align-items-center flex-column justify-content-center col-12 col-lg-3">
+				<h3>Links</h3>
+				<ul class="container-desc d-flex flex-column align-items-start align-items-lg-center justify-content-center gap-2">
+					@foreach (FooterLink item in Model.footerLinks)
+					{
+						<li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == item.Link ? "active-link" : "")">
+							<a asp-controller="@item.Link" asp-action="Index" class="nav-link">@item.Link</a>
+						</li>
+					}
+				</ul>
+			</div>
+			<div class="item d-flex align-items-center flex-column justify-content-center col-12 col-lg-3">
+				<h3>Categories</h3>
+				<ul class="container-desc d-flex flex-column align-items-start align-items-lg-center justify-content-center gap-2">
+					@foreach (FooterCategory item in Model.footerCategories)
+					{
+						<li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == item.Category)">
+							<a asp-controller="Shop" asp-action="Index" class="nav-link">@item.Category</a>
+						</li>
+					}
+				</ul>
+			</div>
+			<div class="item d-flex align-items-center flex-column justify-content-between col-12 col-lg-3">
+				<h3>Contact</h3>
+				<form class="d-flex">
+					<input type="email" placeholder="Email" />
+					<button type="submit">Send</button>
+				</form>
+				<div class="footer-contact d-flex align-items-center flex-column gap-3 gap-lg-2">
+					<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+						<div class="d-flex gap-2">
+							<i class="fa-solid fa-phone"></i>
+							<h2>Phone:</h2>
+						</div>
+						<div>
+							<a class="phone" href="tel:@Model.footerContact.Phone">@Model.footerContact.Phone</a>
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+						<div class="d-flex gap-2">
+							<i class="fa-solid fa-location-dot"></i>
+							<h2>Address:</h2>
+						</div>
+						<div>
+							<span>@Model.footerContact.Location</span>
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between w-100 gap-1 gap-lg-3">
+						<div class="d-flex gap-2">
+							<i class="fa-solid fa-envelope"></i>
+							<h2>Email:</h2>
+						</div>
+						<div>
+							<a class="footer-email" href="mailto:ayuna@gmail.com">@Model.footerContact.Email</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

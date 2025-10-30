@@ -1,0 +1,86 @@
+﻿@model HeaderVM
+
+<header>
+	<div class="container-desc d-flex align-items-center justify-content-between">
+		<div class="h-search d-none d-lg-flex align-items-center gap-2">
+			<i class="fa-solid fa-magnifying-glass"></i>
+			<input type="text" placeholder="Search" />
+		</div>
+		<div class="h-logo">
+			<a asp-controller="Home" asp-action="Index">
+				<img src="./images/@Model.headerTop.Logo" alt="logo" />
+			</a>
+		</div>
+		<div class="h-right d-flex align-items-center gap-3 gap-lg-4">
+			<div class="dropdown">
+				<button class="dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">
+					Az
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">En</a></li>
+					<li><a class="dropdown-item" href="#">Ru</a></li>
+				</ul>
+			</div>
+			@if (!User.Identity.IsAuthenticated)
+			{
+				<div class="user">
+					<a href="login.html"><i class="fa-regular fa-user"></i></a>
+				</div>
+			} else
+			{
+				<p class="mb-0">@User.Identity.Name</p>
+				<a asp-controller="Account" asp-action="LogOut">LogOut</a>
+			}
+			@* <div class="user">
+				<a href="login.html"><i class="fa-regular fa-user"></i></a>
+			</div> *@
+			<div class="wishlist">
+				<a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+			</div>
+			<div class="shop position-relative">
+				<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+				<span class="position-absolute d-flex align-items-center justify-content-center">0</span>
+			</div>
+			<div>
+				<i class="d-block d-lg-none fa-solid fa-bars"
+				   data-bs-toggle="offcanvas"
+				   data-bs-target="#offcanvasTop"></i>
+			</div>
+
+			<div class="offcanvas offcanvas-top"
+				 tabindex="-1"
+				 id="offcanvasTop"
+				 aria-labelledby="offcanvasTopLabel">
+				<div class="offcanvas-header">
+					<button type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"></button>
+				</div>
+				<div class="d-flex align-items-center justify-content-center offcanvas-body">
+					<ul class="container-desc d-flex flex-column align-items-center justify-content-center gap-2">
+						<li><a class="active-link" href="#">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav class="nav d-none d-lg-flex">
+	<ul class="container-desc d-flex align-items-center justify-content-center gap-4">
+		@foreach (HeaderNav item in Model.headerNavs)
+		{
+			<li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == item.Link ? "active-link" : "")">
+				<a asp-controller="@item.Link" asp-action="Index" class="nav-link">@item.Link</a>
+			</li>
+		}		
+	</ul>
+</nav>

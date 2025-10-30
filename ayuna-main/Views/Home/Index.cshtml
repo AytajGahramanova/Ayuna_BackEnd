@@ -24,7 +24,7 @@
 						 alt="img" />
 					<div class="slider-content position-absolute d-flex flex-column align-items-center justify-content-center gap-2">
 						<h2>@item.Title</h2>
-						<a href="shop.html">Shop</a>
+						<a asp-controller="Shop">Shop</a>
 					</div>
 				</div>
 			}
@@ -60,7 +60,7 @@
 				<p>
 					@Model.about?.Description
 				</p>
-				<a href="about.html">
+				<a asp-controller="About">
 					<span>Read more</span>
 				</a>
 			</div>
@@ -81,7 +81,7 @@
 	</div>
 	<div class="container-desc d-flex flex-wrap flex-column">
 		<div class="more-products d-flex justify-content-center justify-content-lg-end">
-			<a href="shop.html">
+			<a asp-controller="Shop">
 				<span>More products</span>
 			</a>
 		</div>
@@ -190,7 +190,7 @@
 	<div class="container-desc d-flex align-items-center justify-content-between flex-wrap">
 		@foreach (Portfolio item in Model.portfolios)
 		{
-			<a href="portfolio.html">
+			<a asp-controller="Portfolio">
 			<div class="portfolio-img">
 				<img src="@item.Image" alt="img" />
 				<div class="layout-portfolio"></div>
@@ -234,7 +234,7 @@
 			<img class="w-100" src="@item.Image" alt="img" />
 			<div class="text position-absolute d-flex flex-column align-items-center">
 				<h2>@item.Name</h2>
-				<a href="blog.html">More</a>
+				<a asp-controller="Blog">More</a>
 			</div>
 		</div>
 		}		

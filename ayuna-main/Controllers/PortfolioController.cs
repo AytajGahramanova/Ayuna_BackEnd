@@ -14,8 +14,15 @@ namespace ayuna_main.Controllers
 		}
 		public IActionResult Index()
 		{
-			List<Portfolio> portfolio = _db.portfolios.ToList();
+			ViewBag.portfolioCount = _db.portfolios.Count();
+			List<Portfolio> portfolio = _db.portfolios.OrderByDescending(x=>x.Id).Take(4).ToList();
 			return View(portfolio);
+		}
+
+		public IActionResult LoadMore(int skip)
+		{
+			List<Portfolio> portfolio = _db.portfolios.OrderByDescending(x => x.Id).Skip(skip).Take(4).ToList();
+			return PartialView("_PortfolioLoadMorePartial", portfolio);
 		}
 	}
 }

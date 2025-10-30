@@ -1,0 +1,14 @@
+﻿@model List<Portfolio>
+
+@foreach (Portfolio item in Model)
+{
+	<div class="portfolio-img">
+		<img src="@item.Image" alt="img" />
+		<div class="hover">
+			<a data-src="@item.Image"
+			   data-fancybox="gallery-photo">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+	</div>
+}

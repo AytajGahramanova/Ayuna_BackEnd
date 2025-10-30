@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+
+@model RegisterVM
+
+<!-- breadcrumb start -->
+<section class="breadcrumb-section">
+    <div class="breadcrumb">
+        <a href="index.html">Home / </a>
+        <a href="#">Register</a>
+    </div>
+    <div class="layer"></div>
+</section>
+<!-- breadcrumb end -->
+<!-- login start -->
+<div class="customer-login mt-30">
+    <div class="container-desc d-flex align-items-center justify-content-center">
+        <!--login area start-->
+        <div class="login-wrapper w-50">
+            <div class="account-form">
+                <h1 class="text-center">Register</h1>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <form asp-action="Register" method="post">
+                    <div class="password-container">
+                        <div class="item my-3">
+                            <label> Name </label>
+                            <input asp-for="Name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="item my-3">
+                            <label> Surname </label>
+                            <input asp-for="Surname" />
+                            <span asp-validation-for="Surname" class="text-danger"></span>
+                        </div>
+                        <div class="item my-3">
+                            <label> Email </label>
+                            <input asp-for="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="password-container">
+                            <label for="password">Password </label>
+                            <input asp-for="Password" class="password-input" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="password-container">
+                            <label for="password">Confirm password </label>
+                            <input asp-for="ConfirmPassword" class="password-input" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="login-submit">
+                        <button class="login-submit-btn" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--login start-->
+    </div>
+</div>
+<!-- customer login end -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
