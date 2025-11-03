@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Read";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model Contact
+
+<div class="card mt-4" style="width: 40rem;">
+	<div class="card-body">
+		<p class="card-title text-lg text-bold">@Model.Description</>
+		<p class="card-title text-lg">@Model.Phone</>
+		<p class="card-title text-lg">@Model.Address</>
+		<p class="card-title text-lg">@Model.Email</>
+	</div>
+</div>
+

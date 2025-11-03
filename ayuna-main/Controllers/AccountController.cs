@@ -21,6 +21,8 @@ namespace ayuna_main.Controllers
 			_roleManager = roleManager;
 			_signInManager = signInManager;
 		}
+
+		[HttpGet]
 		public IActionResult Register()
 		{
 			return View();
@@ -29,7 +31,10 @@ namespace ayuna_main.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Register(RegisterVM registerVM)
 		{
-			if(!ModelState.IsValid)
+
+			await ChangeRole();
+
+			if (!ModelState.IsValid)
 			{
 				return View(registerVM);
 			}
@@ -54,11 +59,65 @@ namespace ayuna_main.Controllers
 
 			await _signInManager.SignInAsync(appUser, true);
 
+			var userCount = _userManager.Users.Count();
+
+			if (userCount == 1)
+			{
+				await _userManager.AddToRoleAsync(appUser, "SuperAdmin");
+			}
+			else if (userCount == 2)
+			{
+				await _userManager.AddToRoleAsync(appUser, "Admin");
+			}
+			else
+			{
+				await _userManager.AddToRoleAsync(appUser, "Member");
+			}
+
 			return RedirectToAction("Index", "Home");
 		}
 
+		[HttpGet]
+		public IActionResult Login()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Login(LoginVM loginVM)
+		{
+			if (!ModelState.IsValid)
+				return View(loginVM);
+
+			var user = await _userManager.FindByEmailAsync(loginVM.Email);
+
+			if (user == null)
+			{
+				ModelState.AddModelError("", "Not User");
+				return View(loginVM);
+			}
+
+			var result = await _signInManager.PasswordSignInAsync(
+				user.UserName,
+				loginVM.Password,
+				true,
+				true
+				);
+
+			if (result.Succeeded)
+			{
+				return RedirectToAction("Index", "Home");
+			}
+
+			ModelState.AddModelError("", "Wrong email or password");
+			return View(loginVM);
+		}
 		public async Task ChangeRole()
 		{
+			if (!await _roleManager.RoleExistsAsync(Helpers.Helper.CreateRole.SuperAdmin.ToString()))
+			{
+				await _roleManager.CreateAsync(new IdentityRole(Helpers.Helper.CreateRole.SuperAdmin.ToString()));
+			}
 			if (!await _roleManager.RoleExistsAsync(Helpers.Helper.CreateRole.Admin.ToString()))
 			{
 				await _roleManager.CreateAsync(new IdentityRole(Helpers.Helper.CreateRole.Admin.ToString()));

@@ -8,5 +8,10 @@ namespace ayuna_main.Controllers
 		{
 			return View();
 		}
+
+		public IActionResult BlogDetail()
+		{
+			return View();
+		}
 	}
 }

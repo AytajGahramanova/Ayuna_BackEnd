@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewData["Title"] = "BlogDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model BlogDetailVM
+
+<!-- blog start -->
+<div class="blog-wrapper">
+    <div class="title text-center">
+        <h3>Blog</h3>
+        <div class="container-desc">
+            <div class="row flex-column flex-lg-row">
+                <div class="col-12 col-lg-8 blog-left">
+                    <div class="blog-card mb-4 col-12">
+                        <div class="image">
+                            <img class="w-100"
+                                 src="@Model.blog.Image"
+                                 alt="img" />
+                        </div>
+                        <div class="content align-items-start justify-content-start">
+                            <div class="blog-date d-flex align-items-center">
+                                <span>@Model.blog.dateTime </span>
+                                <span class="blog-categories"></span>
+                            </div>
+                            <div class="d-flex flex-column align-items-start justify-content-start text-start">
+                                <h2>Italian Getaway</h2>
+                                <p>
+                                    @Model.blog.Description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-related d-flex align-items-center gap-3 gap-lg-4 flex-column flex-lg-row">
+                        <div class="related-cards w-100">
+                            <a href="blog-detail.html">
+                                <img class="w-100 object-fit-cover"
+                                     src="assets/images/blog-img-1.jpg"
+                                     alt="img" />
+                            </a>
+                        </div>
+                        <div class="related-cards w-100">
+                            <a href="blog-detail.html">
+                                <img class="w-100 object-fit-cover"
+                                     src="assets/images/blog-img-2.jpg"
+                                     alt="img" />
+                            </a>
+                        </div>
+                        <div class="related-cards w-100">
+                            <a href="blog-detail.html">
+                                <img class="w-100 object-fit-cover"
+                                     src="assets/images/blog-img-11.jpg"
+                                     alt="img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 blog-right mt-5 mt-lg-0">
+                    <div class="position-relative w-100 mb-3">
+                        <input type="text" placeholder="Seach" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="categories d-flex flex-column align-items-start mb-3">
+                        <h5>Categories</h5>
+                        <ul class="d-flex flex-column align-items-start gap-2">
+                            <li>
+                                <a href="">Gold</a>
+                            </li>
+                            <li>
+                                <a href="">Handmade</a>
+                            </li>
+                            <li>
+                                <a href="">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="">Materials</a>
+                            </li>
+                            <li>
+                                <a href="">Pastel</a>
+                            </li>
+                            <li>
+                                <a href="">Pearls</a>
+                            </li>
+                            <li>
+                                <a href="">Rose</a>
+                            </li>
+                            <li>
+                                <a href="">Silver</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="posts d-flex flex-column align-items-start mb-3">
+                        <h5>Popular Posts</h5>
+                        <div class="d-flex mb-2 align-content-center">
+                            <div class="post-img">
+                                <a href="blog-details.html">
+                                    <img src="assets/images/blog-list-img-5.jpg" alt="img" />
+                                </a>
+                            </div>
+                            <div class="post-info d-flex flex-column align-items-start">
+                                <h4>10 ways of wearing jewelry</h4>
+                                <span>Pearls / Sliver</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-2 align-content-center">
+                            <div class="post-img">
+                                <a href="blog-details.html">
+                                    <img src="assets/images/blog-list-img-3.jpg" alt="img" />
+                                </a>
+                            </div>
+                            <div class="post-info d-flex flex-column align-items-start">
+                                <h4>The new luxury of online shops</h4>
+                                <span>Pearls / Sliver</span>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-2 align-content-center">
+                            <div class="post-img">
+                                <a href="blog-details.html">
+                                    <img src="assets/images/blog-f-img-4.jpg" alt="img" />
+                                </a>
+                            </div>
+                            <div class="post-info d-flex flex-column align-items-start">
+                                <h4>We work with the best jewelers</h4>
+                                <span>Pearls / Sliver</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--blog end -->
+

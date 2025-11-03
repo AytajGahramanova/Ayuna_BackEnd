@@ -4,6 +4,7 @@
 	{
 		public enum CreateRole
 		{
+			SuperAdmin,
 			Admin, 
 			Member
 		}

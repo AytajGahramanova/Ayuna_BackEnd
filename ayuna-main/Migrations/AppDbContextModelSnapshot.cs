@@ -22,6 +22,21 @@ namespace ayuna_main.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BlogCategory", b =>
+                {
+                    b.Property<int>("blogsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("categoriesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("blogsId", "categoriesId");
+
+                    b.HasIndex("categoriesId");
+
+                    b.ToTable("BlogCategory");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -352,7 +367,85 @@ namespace ayuna_main.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("blogs");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("category");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("contact");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.ContactSubmit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -361,7 +454,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("blogs");
+                    b.ToTable("contactSubmit");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterCategory", b =>
@@ -568,6 +661,21 @@ namespace ayuna_main.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("sliders");
+                });
+
+            modelBuilder.Entity("BlogCategory", b =>
+                {
+                    b.HasOne("ayuna_main.Models.Blog", null)
+                        .WithMany()
+                        .HasForeignKey("blogsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ayuna_main.Models.Category", null)
+                        .WithMany()
+                        .HasForeignKey("categoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

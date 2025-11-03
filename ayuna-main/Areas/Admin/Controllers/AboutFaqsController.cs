@@ -1,10 +1,12 @@
 ﻿using ayuna_main.DataAccessLayer;
 using ayuna_main.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ayuna_main.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "SuperAdmin, Admin")]
 	public class AboutFaqsController : Controller
 	{
 		private readonly AppDbContext _db;

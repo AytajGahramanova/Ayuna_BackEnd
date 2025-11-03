@@ -27,5 +27,20 @@ namespace ayuna_main.DataAccessLayer
 		public DbSet<FooterLink> footerLink { get; set; }
 		public DbSet<FooterCategory> footerCategory { get; set; } 
 		public DbSet<FooterContact> footerContacts { get; set; }
+
+		public DbSet<Category> category { get; set; }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			base.OnModelCreating(modelBuilder); 
+
+			// Blog – Category many-to-many
+			modelBuilder.Entity<Blog>()
+				.HasMany(b => b.categories)
+				.WithMany(c => c.blogs);
+		}
+
+		public DbSet<Contact> contact { get; set; }
+		public DbSet<ContactSubmit> contactSubmit { get; set; }
 	}
 }
