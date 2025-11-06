@@ -24,6 +24,7 @@
 									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Id</th>
 									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Name</th>
 									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 ps-2 text-center">Image</th>
+									<th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 ps-2 text-center">Description</th>
 									<th class="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-7 text-center">Action</th>
 								</tr>
 							</thead>
@@ -44,6 +45,11 @@
 										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">
 											<div>
 												<img src="@item.Image" class="avatar avatar-sm me-3 border-radius-lg" alt="user1" style="width:100px!important; height:100px!important; object-fit: cover;!important">
+											</div>
+										</td>
+										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">
+											<div class="d-flex flex-column justify-content-center">
+												<h6 style="width:15ch; overflow:hidden; text-overflow: ellipsis; display: inline-block" class="mb-0 text-sm">@item.Description</h6>
 											</div>
 										</td>
 										<td style="padding: 0.75rem 1.5rem!important; text-align: center;">

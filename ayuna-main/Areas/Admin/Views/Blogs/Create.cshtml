@@ -12,8 +12,19 @@
 		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Name" type="text" class="form-control">
 	</div>
 	<div class="mb-3">
+		<label class="form-label">Description</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Description" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
 		<label class="form-label">Image</label>
 		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="formFile" type="file" class="form-control">
+	</div
+	<div>
+		@foreach (var item in ViewBag.Category)
+			{
+				<input type="checkbox" name="selectCategory" value="@item.Id"/>
+				<span>@item.Name</span>
+			}
 	</div>
 	<button type="submit" class="btn btn-success">Submit</button>
 	<a class="btn btn-info" asp-action="Index">Go back</a>

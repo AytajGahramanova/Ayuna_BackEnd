@@ -27,14 +27,31 @@ namespace ayuna_main.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Create()
 		{
+			ViewBag.Category = _db.category.ToList();	
 			return View();
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Create(Blog blog)
+		public async Task<IActionResult> Create(Blog blog, int[] selectCategory)
 		{
-			if (ModelState.IsValid)
+			
+			if (!ModelState.IsValid)
 			{
+				blog.categories = new List<Category>();
+
+				foreach (var item in selectCategory)
+				{
+					if (item != null)
+					{
+						var result = _db.category.Find(item);
+
+						if(result != null)
+						{
+							blog.categories.Add(result);
+						}
+					}
+				}
+
 				if (blog.formFile != null)
 				{
 					string uploadFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");

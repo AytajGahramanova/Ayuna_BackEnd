@@ -21,7 +21,7 @@ namespace ayuna_main.Controllers
 			List<Portfolio> portfolios = _db.portfolios.ToList();
 			GiftCard giftCard = _db.giftCards?.FirstOrDefault();
 			ViewBag.GiftCardCount = _db.giftCards.Count();
-			List<Blog> blogs = _db.blogs.ToList();
+			List<Blog> blogs = _db.blogs.Take(2).ToList();
 
 			HomeVM homeVm = new HomeVM
 			{

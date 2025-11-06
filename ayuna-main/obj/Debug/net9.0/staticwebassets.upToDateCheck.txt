@@ -232,6 +232,7 @@ wwwroot\lib\jquery\LICENSE.txt
 wwwroot\script.js
 wwwroot\uploads\031a2def-0a43-4df4-8647-4fc940119f12_slider-img-2.jpg
 wwwroot\uploads\11829c6d-2d3d-4d30-b579-3b662050d9a9_home-gift-card-bg.jpg
+wwwroot\uploads\22435a21-6a89-4872-b7db-228340ad478d_IMG-9098.jpg
 wwwroot\uploads\2f08f950-4cae-436d-accf-42c44bf4b9a1_about-section-img.jpg
 wwwroot\uploads\35f32538-864b-4e6e-ab68-30fa5da6c5a0_about-signiture.png
 wwwroot\uploads\3f2ad25c-7bbb-460f-a9a6-a77b2abf8dbd_slider-img-14.jpg
@@ -242,6 +243,8 @@ wwwroot\uploads\616d69fa-1839-46b5-99a2-f306dbfcdc15_gift-card-img-3.jpg
 wwwroot\uploads\7a5bb274-7112-4e94-b971-de541162dc77_gallery-img-1.jpg
 wwwroot\uploads\84f18f5e-f9f0-4cbf-91cc-abd25339a797_gift-card-img-2.jpg
 wwwroot\uploads\8532d641-4809-4b03-9b27-a2793ce4fe4e_about-img.jpg
+wwwroot\uploads\8ba275e4-1b70-436e-901f-1d5c14bc71e5_Aytac.jpg
+wwwroot\uploads\8eabed31-ed61-4da2-a81b-f17bce73967f_Aytac.jpg
 wwwroot\uploads\91b25bc1-0157-4c22-9f34-05002eea1649_gallery-img-8.jpg
 wwwroot\uploads\94dd76b9-e314-4427-a457-fee375279205_blog-img-2.jpg
 wwwroot\uploads\9df6e537-56cf-45c9-9562-1aaa2e5066e1_about-breadcrumb-2.jpg
@@ -249,6 +252,7 @@ wwwroot\uploads\b7d36bdd-50e9-4946-8db2-e0dd755b985a_gift-card-img-1.jpg
 wwwroot\uploads\ba43357f-7f3a-486a-a1a1-890c99e63184_gallery-img-3.jpg
 wwwroot\uploads\c799dbda-2445-4eb4-8cda-a99cbc063f49_blog-f-img-4.jpg
 wwwroot\uploads\cd81b0a6-54e1-458b-98aa-f221d8046114_gallery-img-2.jpg
+wwwroot\uploads\cf1354f9-271b-4056-91f5-b97f5d7ab157_IMG-9098.jpg
 wwwroot\uploads\d12e018b-3381-4afe-a239-57007ecbcd62_gallery-img-7.jpg
 wwwroot\uploads\d5346745-5e00-4c4a-b47f-5e3b18b01fca_blog-img-11.jpg
 wwwroot\uploads\d5ec68b4-a748-44f1-9cb3-0dca30000867_slider-img-5.jpg

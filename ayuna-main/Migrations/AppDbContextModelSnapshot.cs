@@ -34,7 +34,7 @@ namespace ayuna_main.Migrations
 
                     b.HasIndex("categoriesId");
 
-                    b.ToTable("BlogCategory");
+                    b.ToTable("BlogCategory", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -191,7 +191,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("abouts");
+                    b.ToTable("abouts", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutBreadcrumb", b =>
@@ -207,7 +207,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutBreadcrumbs");
+                    b.ToTable("aboutBreadcrumbs", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutContent", b =>
@@ -239,7 +239,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutContents");
+                    b.ToTable("aboutContents", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutFaq", b =>
@@ -260,7 +260,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutFaqs");
+                    b.ToTable("aboutFaqs", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutSigniture", b =>
@@ -280,7 +280,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutSignitures");
+                    b.ToTable("aboutSignitures", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AppUser", b =>
@@ -383,7 +383,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("blogs");
+                    b.ToTable("blogs", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Category", b =>
@@ -400,7 +400,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("category");
+                    b.ToTable("category", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Contact", b =>
@@ -429,7 +429,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("contact");
+                    b.ToTable("contact", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.ContactSubmit", b =>
@@ -454,7 +454,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("contactSubmit");
+                    b.ToTable("contactSubmit", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterCategory", b =>
@@ -471,7 +471,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerCategory");
+                    b.ToTable("footerCategory", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterContact", b =>
@@ -496,7 +496,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerContacts");
+                    b.ToTable("footerContacts", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterContent", b =>
@@ -516,7 +516,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerContent");
+                    b.ToTable("footerContent", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterLink", b =>
@@ -533,7 +533,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerLink");
+                    b.ToTable("footerLink", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.GiftCard", b =>
@@ -557,7 +557,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("giftCards");
+                    b.ToTable("giftCards", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.GiftCardPage", b =>
@@ -591,7 +591,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("giftCardsPage");
+                    b.ToTable("giftCardsPage", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.HeaderNav", b =>
@@ -608,7 +608,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("headerNav");
+                    b.ToTable("headerNav", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.HeaderTop", b =>
@@ -624,7 +624,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("headerTop");
+                    b.ToTable("headerTop", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Portfolio", b =>
@@ -640,7 +640,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("portfolios");
+                    b.ToTable("portfolios", (string)null);
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Slider", b =>
@@ -660,7 +660,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("sliders");
+                    b.ToTable("sliders", (string)null);
                 });
 
             modelBuilder.Entity("BlogCategory", b =>

@@ -3,80 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\views\\superadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\views\\superadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\sliderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\portfolioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\portfolioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\giftcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\giftcardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\giftcardpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\giftcardpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\contactsubmitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\contactsubmitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\aboutsigniturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\aboutsigniturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\aboutscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\aboutscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\aboutfaqscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\aboutfaqscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\aboutcontentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\aboutcontentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\areas\\admin\\controllers\\aboutbreadcrumbscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\areas\\admin\\controllers\\aboutbreadcrumbscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,257 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 258,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAI4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T18:18:40.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ayuna-main\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ayuna-main\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T18:18:11.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\SuperAdmin\\Index.cshtml",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Views\\SuperAdmin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Views\\SuperAdmin\\Index.cshtml",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Views\\SuperAdmin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T18:14:51.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SuperAdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SuperAdminController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\SuperAdminController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SuperAdminController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\SuperAdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:13:48.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SlidersController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\SlidersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:58.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PortfoliosController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\PortfoliosController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\PortfoliosController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\PortfoliosController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\PortfoliosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:53.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GiftCardsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:49.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GiftCardPagesController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\GiftCardPagesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:45.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ContactSubmitsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\ContactSubmitsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\ContactSubmitsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\ContactSubmitsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\ContactSubmitsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:39.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ContactsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\ContactsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\ContactsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\ContactsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\ContactsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:35.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BlogsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\BlogsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\BlogsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\BlogsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\BlogsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:31.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AboutSignituresController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutSignituresController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\AboutSignituresController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutSignituresController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\AboutSignituresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:27.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AboutsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\AboutsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\AboutsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:24.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:00:26.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AboutFaqsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutFaqsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\AboutFaqsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutFaqsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\AboutFaqsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:19.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AboutContentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutContentsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\AboutContentsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutContentsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\AboutContentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:09.695Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AboutBreadcrumbsController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutBreadcrumbsController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Areas\\Admin\\Controllers\\AboutBreadcrumbsController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Areas\\Admin\\Controllers\\AboutBreadcrumbsController.cs",
-              "RelativeToolTip": "ayuna-main\\Areas\\Admin\\Controllers\\AboutBreadcrumbsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T18:03:01.796Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T19:54:43.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ayuna-main\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEgAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T17:46:05.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Helper.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Helpers\\Helper.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Helpers\\Helper.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Helpers\\Helper.cs",
-              "RelativeToolTip": "ayuna-main\\Helpers\\Helper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T17:45:22.196Z",
+              "WhenOpened": "2025-11-06T19:24:35.811Z",
               "EditorCaption": ""
             }
           ]

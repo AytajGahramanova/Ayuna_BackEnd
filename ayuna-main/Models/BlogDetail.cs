@@ -2,7 +2,7 @@
 
 namespace ayuna_main.Models
 {
-	public class Blog
+	public class BlogDetail
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
@@ -13,7 +13,8 @@ namespace ayuna_main.Models
 		[NotMapped]
 		public IFormFile? formFile { get; set; }
 
-		public ICollection<Category> categories { get; set; }
-		public BlogDetail Detail { get; set; }
+		[ForeignKey("Blog")]
+		public int BlogId { get; set; }
+		public Blog Blog { get; set; }
 	}
 }
