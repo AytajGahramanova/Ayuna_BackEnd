@@ -30,6 +30,10 @@ namespace ayuna_main.DataAccessLayer
 
 		public DbSet<Category> category { get; set; }
 
+		public DbSet<Contact> contact { get; set; }
+		public DbSet<ContactSubmit> contactSubmit { get; set; }
+		public DbSet<Product> products { get; set; }
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder); 
@@ -38,9 +42,12 @@ namespace ayuna_main.DataAccessLayer
 			modelBuilder.Entity<Blog>()
 				.HasMany(b => b.categories)
 				.WithMany(c => c.blogs);
+
+			// Blog – Category many-to-many
+			modelBuilder.Entity<Product>()
+				.HasMany(b => b.Categories)
+				.WithMany(c => c.products);
 		}
 
-		public DbSet<Contact> contact { get; set; }
-		public DbSet<ContactSubmit> contactSubmit { get; set; }
 	}
 }

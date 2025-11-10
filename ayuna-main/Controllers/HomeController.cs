@@ -22,6 +22,7 @@ namespace ayuna_main.Controllers
 			GiftCard giftCard = _db.giftCards?.FirstOrDefault();
 			ViewBag.GiftCardCount = _db.giftCards.Count();
 			List<Blog> blogs = _db.blogs.Take(2).ToList();
+			List<Product> products = _db.products.ToList();
 
 			HomeVM homeVm = new HomeVM
 			{
@@ -30,6 +31,7 @@ namespace ayuna_main.Controllers
 				portfolios = portfolios,
 				giftCard = giftCard,
 				blogs = blogs,
+				products = products
 			};
 
 			return View(homeVm);

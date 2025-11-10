@@ -9,5 +9,6 @@ namespace ayuna_main.ViewModel
 		public List<Portfolio> portfolios { get; set; }
 		public GiftCard giftCard { get; set; }	
 		public List<Blog> blogs { get; set; }	
+		public List<Product> products { get; set; }
 	}
 }

@@ -340,7 +340,6 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\tr\Microsoft.C
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\u487tyfre2-t533bzildk.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\smopwj8itm-umq1l4d5pa.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\ggweuijdla-p5sx7ln6s7.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\74f1xdka9t-s2o6hrpxsm.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\zphjfwry40-0vexwlwo87.gz
@@ -389,9 +388,10 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\8fv
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\ayuna-main.sourcelink.json
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\79es1jfk5x-zqd7awfhh3.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\r89l3r2u2i-wyj2iwvazu.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-jlmiesxyci.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-jlmiesxyci.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\smopwj8itm-q0q8ovqi6d.gz

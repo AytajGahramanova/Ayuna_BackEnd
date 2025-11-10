@@ -114,12 +114,14 @@ a {
 
 }
 
-svg {
+button[type=submit] {
     position: absolute;
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 h5 {

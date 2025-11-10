@@ -34,7 +34,22 @@ namespace ayuna_main.Migrations
 
                     b.HasIndex("categoriesId");
 
-                    b.ToTable("BlogCategory", (string)null);
+                    b.ToTable("BlogCategory");
+                });
+
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.Property<int>("CategoriesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("productsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CategoriesId", "productsId");
+
+                    b.HasIndex("productsId");
+
+                    b.ToTable("CategoryProduct");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -191,7 +206,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("abouts", (string)null);
+                    b.ToTable("abouts");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutBreadcrumb", b =>
@@ -207,7 +222,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutBreadcrumbs", (string)null);
+                    b.ToTable("aboutBreadcrumbs");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutContent", b =>
@@ -239,7 +254,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutContents", (string)null);
+                    b.ToTable("aboutContents");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutFaq", b =>
@@ -260,7 +275,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutFaqs", (string)null);
+                    b.ToTable("aboutFaqs");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AboutSigniture", b =>
@@ -280,7 +295,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("aboutSignitures", (string)null);
+                    b.ToTable("aboutSignitures");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.AppUser", b =>
@@ -383,7 +398,40 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("blogs", (string)null);
+                    b.ToTable("blogs");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.BlogDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogId")
+                        .IsUnique();
+
+                    b.ToTable("BlogDetail");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Category", b =>
@@ -400,7 +448,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("category", (string)null);
+                    b.ToTable("category");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Contact", b =>
@@ -429,7 +477,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("contact", (string)null);
+                    b.ToTable("contact");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.ContactSubmit", b =>
@@ -450,11 +498,12 @@ namespace ayuna_main.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("contactSubmit", (string)null);
+                    b.ToTable("contactSubmit");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterCategory", b =>
@@ -471,7 +520,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerCategory", (string)null);
+                    b.ToTable("footerCategory");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterContact", b =>
@@ -496,7 +545,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerContacts", (string)null);
+                    b.ToTable("footerContacts");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterContent", b =>
@@ -516,7 +565,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerContent", (string)null);
+                    b.ToTable("footerContent");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.FooterLink", b =>
@@ -533,7 +582,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("footerLink", (string)null);
+                    b.ToTable("footerLink");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.GiftCard", b =>
@@ -557,7 +606,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("giftCards", (string)null);
+                    b.ToTable("giftCards");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.GiftCardPage", b =>
@@ -591,7 +640,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("giftCardsPage", (string)null);
+                    b.ToTable("giftCardsPage");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.HeaderNav", b =>
@@ -608,7 +657,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("headerNav", (string)null);
+                    b.ToTable("headerNav");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.HeaderTop", b =>
@@ -624,7 +673,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("headerTop", (string)null);
+                    b.ToTable("headerTop");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Portfolio", b =>
@@ -640,7 +689,33 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("portfolios", (string)null);
+                    b.ToTable("portfolios");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("hoverImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("products");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Slider", b =>
@@ -660,7 +735,7 @@ namespace ayuna_main.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("sliders", (string)null);
+                    b.ToTable("sliders");
                 });
 
             modelBuilder.Entity("BlogCategory", b =>
@@ -674,6 +749,21 @@ namespace ayuna_main.Migrations
                     b.HasOne("ayuna_main.Models.Category", null)
                         .WithMany()
                         .HasForeignKey("categoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.HasOne("ayuna_main.Models.Category", null)
+                        .WithMany()
+                        .HasForeignKey("CategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ayuna_main.Models.Product", null)
+                        .WithMany()
+                        .HasForeignKey("productsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -726,6 +816,23 @@ namespace ayuna_main.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.BlogDetail", b =>
+                {
+                    b.HasOne("ayuna_main.Models.Blog", "Blog")
+                        .WithOne("Detail")
+                        .HasForeignKey("ayuna_main.Models.BlogDetail", "BlogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Blog", b =>
+                {
+                    b.Navigation("Detail")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

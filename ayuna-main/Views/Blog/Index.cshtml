@@ -2,13 +2,13 @@
 	ViewData["Title"] = "Ayuna - Blog";
 }
 
-@model List<Blog>
+@model BlogVM
 
 <!-- breadcrumb start -->
 <section class="breadcrumb-section">
 	<div class="breadcrumb">
-		<a href="index.html">Home / </a>
-		<a href="#">Blog</a>
+		<a asp-controller="Home" asp-action="Index">Home / </a>
+		<a asp-controller="Blog" asp-action="Index">Blog</a>
 	</div>
 	<div class="layer"></div>
 </section>
@@ -21,7 +21,7 @@
 			<div class="row flex-column flex-lg-row">
 				<div class="col-12 col-lg-8 blog-left">
 					<div class="row">
-						@foreach (Blog item in Model)
+						@foreach (Blog item in Model.Blogs)
 						{
 
 							<div class="blog-card mb-5 col-12 col-lg-6">
@@ -31,19 +31,21 @@
 										 alt="img" />
 								</div>
 								<div class="content">
-									<div class="blog-date d-flex align-items-center">
-										<span>@item.dateTime</span>
-
-										@foreach (var x in item.categories)
-										{
-											<span class="blog-categories">@x.Name/</span>
-										}
+									<div class="blog-date d-flex align-items-center flex-column gap-3">
+										<div><span>@item.dateTime</span></div>
+										<div>
+											@foreach (var x in item.categories)
+											{
+												<span class="blog-categories">@x.Name/</span>
+											}
+										</div>
 									</div>
 									<div>
 										<h2>@item.Name</h2>
 										<p>
-											@item.Description
+											@(item.Description.Length > 200 ? item.Description.Substring(0, 200) + "..." : item.Description)
 										</p>
+
 										<a asp-route-id="@item.Id" asp-action="BlogDetail">
 											<span>Read more</span>
 										</a>
@@ -57,73 +59,45 @@
 				</div>
 				<div class="col-12 col-lg-4 blog-right mt-5 mt-lg-0">
 					<div class="position-relative w-100 mb-3">
-						<input type="text" placeholder="Seach" />
-						<i class="fa-solid fa-magnifying-glass"></i>
+						<form method="get" asp-action="Index">
+							<input type="text" name="search" placeholder="Search" value="@ViewBag.Search" />
+							<button type="submit">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
 					</div>
+
 					<div class="categories d-flex flex-column align-items-start mb-3">
 						<h5>Categories</h5>
 						<ul class="d-flex flex-column align-items-start gap-2">
-							<li>
-								<a href="">Gold</a>
-							</li>
-							<li>
-								<a href="">Handmade</a>
-							</li>
-							<li>
-								<a href="">Lifestyle</a>
-							</li>
-							<li>
-								<a href="">Materials</a>
-							</li>
-							<li>
-								<a href="">Pastel</a>
-							</li>
-							<li>
-								<a href="">Pearls</a>
-							</li>
-							<li>
-								<a href="">Rose</a>
-							</li>
-							<li>
-								<a href="">Silver</a>
-							</li>
+							@foreach (var item in Model.Categories)
+							{
+								<li>
+									<a asp-action="Index" asp-route-categoryId="@item.Id">@item.Name</a>
+								</li>
+							}
 						</ul>
 					</div>
 					<div class="posts d-flex flex-column align-items-start mb-3">
 						<h5>Popular Posts</h5>
-						<div class="d-flex mb-2 align-content-center">
-							<div class="post-img">
-								<a href="blog-details.html">
-									<img src="images/blog-list-img-5.jpg" alt="img" />
-								</a>
+						@foreach (Blog item in Model.Blogs.Take(3))
+						{
+							<div class="d-flex mb-2 align-content-center">
+								<div class="post-img">
+									<a asp-route-id="@item.Id" asp-action="BlogDetail">
+										<img src="@item.Image" alt="img" />
+									</a>
+								</div>
+								<div class="post-info d-flex flex-column align-items-start">
+									<h4>@item.Name</h4>
+
+									@foreach (var x in item.categories)
+									{
+										<span>@x.Name/</span>
+									}
+								</div>
 							</div>
-							<div class="post-info d-flex flex-column align-items-start">
-								<h4>10 ways of wearing jewelry</h4>
-								<span>Pearls / Sliver</span>
-							</div>
-						</div>
-						<div class="d-flex mb-2 align-content-center">
-							<div class="post-img">
-								<a href="blog-details.html">
-									<img src="images/blog-list-img-3.jpg" alt="img" />
-								</a>
-							</div>
-							<div class="post-info d-flex flex-column align-items-start">
-								<h4>The new luxury of online shops</h4>
-								<span>Pearls / Sliver</span>
-							</div>
-						</div>
-						<div class="d-flex mb-2 align-content-center">
-							<div class="post-img">
-								<a href="blog-details.html">
-									<img src="images/blog-f-img-4.jpg" alt="img" />
-								</a>
-							</div>
-							<div class="post-info d-flex flex-column align-items-start">
-								<h4>We work with the best jewelers</h4>
-								<span>Pearls / Sliver</span>
-							</div>
-						</div>
+						}
 					</div>
 				</div>
 			</div>

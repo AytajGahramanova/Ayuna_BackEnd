@@ -86,98 +86,34 @@
 			</a>
 		</div>
 		<div class="row d-flex justify-content-center justify-content-lg-between">
-			<div class="product col-12 col-lg-3">
+			@foreach (var item in Model.products)
+			{
+					<div class="product col-12 col-lg-3">
 				<div class="product-image">
-					<img src="images/product-img-1.jpg" alt="img" />
+					<img src="@item.Image" alt="img" />
 				</div>
 				<div class="content">
 					<div class="d-flex justify-content-between align-items-center position-relative">
-						<a href="product-detail.html">Circle Necklace</a>
+						<a href="product-detail.html">@item.Name</a>
 						<i class="fa-regular fa-heart"></i>
 					</div>
 					<div class="categorie">
 						<h5>Accessories / Bracelests</h5>
 					</div>
 					<div class="price">
-						<p>52.00$</p>
+						<p>@item.Price $</p>
 					</div>
 				</div>
 				<div class="hover-image">
-					<img src="images/product-img-1.1.jpg" alt="img" />
+					<img src="@item.hoverImage" alt="img" />
 				</div>
 				<div class="more-detail">
 					<a href="product-detail.html">Select options</a>
 				</div>
 			</div>
-			<div class="product col-12 col-lg-3">
-				<div class="product-image">
-					<img src="images/product-img-2.jpg" alt="img" />
-				</div>
-				<div class="content">
-					<div class="d-flex justify-content-between align-items-center position-relative">
-						<a href="product-detail.html">Circle Necklace</a>
-						<i class="fa-regular fa-heart"></i>
-					</div>
-					<div class="categorie">
-						<h5>Accessories / Bracelests</h5>
-					</div>
-					<div class="price">
-						<p>52.00$</p>
-					</div>
-				</div>
-				<div class="hover-image">
-					<img src="images/product-img-2.2.jpg" alt="img" />
-				</div>
-				<div class="more-detail">
-					<a href="product-detail.html">Select options</a>
-				</div>
-			</div>
-			<div class="product col-12 col-lg-3">
-				<div class="product-image">
-					<img src="images/product-img-3.jpg" alt="img" />
-				</div>
-				<div class="content">
-					<div class="d-flex justify-content-between align-items-center position-relative">
-						<a href="product-detail.html">Circle Necklace</a>
-						<i class="fa-regular fa-heart"></i>
-					</div>
-					<div class="categorie">
-						<h5>Accessories / Bracelests</h5>
-					</div>
-					<div class="price">
-						<p>52.00$</p>
-					</div>
-				</div>
-				<div class="hover-image">
-					<img src="images/blog-img-11.jpg" alt="img" />
-				</div>
-				<div class="more-detail">
-					<a href="product-detail.html">Select options</a>
-				</div>
-			</div>
-			<div class="product col-12 col-lg-3">
-				<div class="product-image">
-					<img src="images/product-img-4.jpg" alt="img" />
-				</div>
-				<div class="content">
-					<div class="d-flex justify-content-between align-items-center position-relative">
-						<a href="product-detail.html">Circle Necklace</a>
-						<i class="fa-regular fa-heart"></i>
-					</div>
-					<div class="categorie">
-						<h5>Accessories / Bracelests</h5>
-					</div>
-					<div class="price">
-						<p>52.00$</p>
-					</div>
-				</div>
-				<div class="hover-image">
-					<img src="images/product-img-4.2.jpg" alt="img" />
-				</div>
-				<div class="more-detail">
-					<a href="product-detail.html">Select options</a>
-				</div>
-			</div>
+			}
+		
+
 		</div>
 	</div>
 </section>
