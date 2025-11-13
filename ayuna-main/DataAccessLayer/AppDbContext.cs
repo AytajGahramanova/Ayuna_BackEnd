@@ -33,6 +33,7 @@ namespace ayuna_main.DataAccessLayer
 		public DbSet<Contact> contact { get; set; }
 		public DbSet<ContactSubmit> contactSubmit { get; set; }
 		public DbSet<Product> products { get; set; }
+		public DbSet<Wishlist> wishlist { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

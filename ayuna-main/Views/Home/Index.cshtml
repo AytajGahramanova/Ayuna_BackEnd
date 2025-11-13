@@ -88,31 +88,34 @@
 		<div class="row d-flex justify-content-center justify-content-lg-between">
 			@foreach (var item in Model.products)
 			{
-					<div class="product col-12 col-lg-3">
-				<div class="product-image">
-					<img src="@item.Image" alt="img" />
-				</div>
-				<div class="content">
-					<div class="d-flex justify-content-between align-items-center position-relative">
-						<a href="product-detail.html">@item.Name</a>
-						<i class="fa-regular fa-heart"></i>
+				<div class="product col-12 col-lg-3">
+					<div class="product-image">
+						<img src="@item.Image" alt="img" />
 					</div>
-					<div class="categorie">
-						<h5>Accessories / Bracelests</h5>
+					<div class="content">
+						<div class="d-flex justify-content-between align-items-center position-relative">
+							<a href="product-detail.html">@item.Name</a>
+							<form asp-controller="Wishlist" asp-action="Add" method="post">
+								<input type="hidden" name="productId" value="@item.Id" />
+								<button style="border: none; background-color: transparent;" type="submit"><i class="fa-regular fa-heart"></i></button>
+							</form>
+						</div>
+						<div class="categorie">
+							<h5>Accessories / Bracelests</h5>
+						</div>
+						<div class="price">
+							<p>@item.Price $</p>
+						</div>
 					</div>
-					<div class="price">
-						<p>@item.Price $</p>
+					<div class="hover-image">
+						<img src="@item.hoverImage" alt="img" />
+					</div>
+					<div class="more-detail">
+						<a href="product-detail.html">Select options</a>
 					</div>
 				</div>
-				<div class="hover-image">
-					<img src="@item.hoverImage" alt="img" />
-				</div>
-				<div class="more-detail">
-					<a href="product-detail.html">Select options</a>
-				</div>
-			</div>
 			}
-		
+
 
 		</div>
 	</div>
@@ -127,34 +130,34 @@
 		@foreach (Portfolio item in Model.portfolios)
 		{
 			<a asp-controller="Portfolio">
-			<div class="portfolio-img">
-				<img src="@item.Image" alt="img" />
-				<div class="layout-portfolio"></div>
-			</div>
-		</a>
+				<div class="portfolio-img">
+					<img src="@item.Image" alt="img" />
+					<div class="layout-portfolio"></div>
+				</div>
+			</a>
 		}
-		
+
 	</div>
 </section>
 <!-- portfolio section end -->
 <!-- gift-card section start -->
-@if(ViewBag.GiftCardCount > 0)
+@if (ViewBag.GiftCardCount > 0)
 {
 	<section class="gift-card-section">
-	<div class="container-desc">
+		<div class="container-desc">
 			<div style="background-image: url('@Url.Content(Model.giftCard?.Image)');" class="gift-bg d-flex flex-column flex-lg-row justify-content-center align-items-center text-center">
-			<h2>@Model.giftCard?.Title</h2>
-			<div class="content">
-				<p>
-					@Model.giftCard?.Description
-				</p>
-				<a asp-controller="GiftCart" asp-action="Index">
-					<span> more</span>
-				</a>
+				<h2>@Model.giftCard?.Title</h2>
+				<div class="content">
+					<p>
+						@Model.giftCard?.Description
+					</p>
+					<a asp-controller="GiftCart" asp-action="Index">
+						<span> more</span>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 }
 
 <!-- gift-card section end -->
@@ -167,13 +170,13 @@
 		@foreach (Blog item in Model.blogs)
 		{
 			<div class="item position-relative">
-			<img class="w-100" src="@item.Image" alt="img" />
-			<div class="text position-absolute d-flex flex-column align-items-center">
-				<h2>@item.Name</h2>
-				<a asp-controller="Blog">More</a>
+				<img class="w-100" src="@item.Image" alt="img" />
+				<div class="text position-absolute d-flex flex-column align-items-center">
+					<h2>@item.Name</h2>
+					<a asp-controller="Blog">More</a>
+				</div>
 			</div>
-		</div>
-		}		
+		}
 	</div>
 </section>
 <!-- blog section end -->
