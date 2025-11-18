@@ -94,14 +94,24 @@
 					</div>
 					<div class="content">
 						<div class="d-flex justify-content-between align-items-center position-relative">
-							<a href="product-detail.html">@item.Name</a>
+							<a asp-route-id="@item.Id" asp-action="ProductDetail">@item.Name</a>
 							<form asp-controller="Wishlist" asp-action="Add" method="post">
 								<input type="hidden" name="productId" value="@item.Id" />
-								<button style="border: none; background-color: transparent;" type="submit"><i class="fa-regular fa-heart"></i></button>
+								<button style="border: none; background-color: transparent;" type="submit"><i style="color: @(item.isLike == false ? "" : "#FF0000")" class="@(item.isLike == false ? "fa-regular fa-heart" : "fas fa-heart")"></i></button>
 							</form>
 						</div>
 						<div class="categorie">
-							<h5>Accessories / Bracelests</h5>
+							@foreach (var pro in item.Categories)
+							{
+								if (pro != item.Categories.Last())
+								{
+									<span>@pro.Name /</span>
+								}
+								else
+								{
+									<span>@pro.Name</span>
+								}
+							}
 						</div>
 						<div class="price">
 							<p>@item.Price $</p>
@@ -111,7 +121,7 @@
 						<img src="@item.hoverImage" alt="img" />
 					</div>
 					<div class="more-detail">
-						<a href="product-detail.html">Select options</a>
+						<a asp-route-id="@item.Id" asp-action="ProductDetail">Select options</a>
 					</div>
 				</div>
 			}

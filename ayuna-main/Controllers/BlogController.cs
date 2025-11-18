@@ -23,7 +23,6 @@ namespace ayuna_main.Controllers
 			if (!string.IsNullOrEmpty(search))
 			{
 				query = query.Where(x => x.Name.ToLower().Contains(search));
-				
 			}
 
 			if (categoryId != 0)

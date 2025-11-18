@@ -95,5 +95,90 @@ namespace ayuna_main.Areas.Admin.Controllers
 			return View(product);
 		}
 
+		[HttpGet]
+		public IActionResult Read(int id)
+		{
+			Product product = _db.products.Find(id);
+
+			if (product == null)
+			{
+				return NotFound();
+			}
+			return View(product);
+		}
+
+		[HttpGet]
+		public IActionResult Update(int id)
+		{
+			if (id == null)
+			{
+				return BadRequest();
+			}
+
+			Product product = _db.products.Find(id);
+
+			if (product == null)
+			{
+				return NotFound();
+			}
+			return View(product);
+		}
+
+		[HttpPost]
+		public IActionResult Update(int id, Product product)
+		{
+			if (id == null)
+			{
+				return BadRequest();
+			}
+			Product dbproduct = _db.products.Find(id);
+			dbproduct.Name = product.Name;
+			dbproduct.Image = product.Image;
+			dbproduct.hoverImage = product.hoverImage;
+			dbproduct.Price = product.Price;
+
+			_db.SaveChanges();
+
+			if (dbproduct == null)
+			{
+				return NotFound();
+			}
+
+			return RedirectToAction("Index");
+		}
+
+		[HttpGet]
+		public IActionResult Delete(int id)
+		{
+			if (id == null)
+			{
+				return BadRequest();
+			}
+
+			Product product = _db.products.Find(id);
+
+			if (product == null)
+			{
+				return NotFound();
+			}
+
+			return View(product);
+		}
+
+		[HttpPost, ActionName("Delete")]
+		public IActionResult DeleteConfirm(int id)
+		{
+			if (id == null)
+			{
+				return BadRequest();
+			}
+			Product product = _db.products.Find(id);
+
+			_db.products.Remove(product);
+			_db.SaveChanges();
+
+			return RedirectToAction("Index");
+		}
+
 	}
 }

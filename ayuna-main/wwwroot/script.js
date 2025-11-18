@@ -1,9 +1,3 @@
-// let canvas = document.querySelector(".canvas");
-// let menuIcon = document.querySelector(".fa-bars");
-
-// menuIcon.addEventListener("click", () => {
-//   canvas.classList.toggle("show");
-// });
 
 // scroll bottom
 let scrollButton = document.querySelector(".page-scroll-button");
@@ -74,25 +68,6 @@ var swiper = new Swiper(".mySwiper", {
 // fancybox
 Fancybox.bind("[data-fancybox]", {});
 
-// login and register password
-// let passwordInput = document.querySelector(".password-input");
-// let svg = document.querySelector(".fa-eye-slash");
-
-// console.log(svg);
-
-// svg.addEventListener("click", () => {
-//   console.log("click");
-
-//   if (passwordInput.type === "password") {
-//     passwordInput.type = "text";
-//     svg.classList.remove("fa-eye-slash");
-//     svg.classList.add("fa-eye");
-//   } else {
-//     passwordInput.type = "password";
-//     svg.classList.remove("fa-eye");
-//     svg.classList.add("fa-eye-slash");
-//   }
-// });
 
 //quantity-buttons
 const quantityWrappers = document.querySelectorAll(".quantity-buttons");

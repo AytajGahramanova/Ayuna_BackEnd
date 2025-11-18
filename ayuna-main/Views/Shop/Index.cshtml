@@ -1,353 +1,127 @@
-﻿
-@{
-    ViewData["Title"] = "Ayuna - Shop";
+﻿@{
+	ViewData["Title"] = "Ayuna - Shop";
 }
+@model ShopVM
 
 <!-- breadcrumb start -->
 <section class="breadcrumb-section">
-    <div class="breadcrumb">
-        <a href="index.html">Home / </a>
-        <a href="#">Shop</a>
-    </div>
-    <div class="layer"></div>
+	<div class="breadcrumb">
+		<a asp-controller="Home" asp-action="Index">Home / </a>
+		<a asp-controller="Shop" asp-action="Index">Shop </a>
+	</div>
+	<div class="layer"></div>
 </section>
 <!-- breadcrumb end -->
 <!-- shop start -->
 <div class="shop-wrapper mt-5">
-    <div class="container-desc">
-        <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-3 mt-5 mt-lg-0">
-                <div class="position-relative w-100 mb-3">
-                    <input type="text" placeholder="Seach" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="categories d-flex flex-column align-items-start mb-3">
-                    <h5>Categories</h5>
-                    <ul class="d-flex flex-column align-items-start gap-2">
-                        <li>
-                            <a href="">Gold</a>
-                        </li>
-                        <li>
-                            <a href="">Handmade</a>
-                        </li>
-                        <li>
-                            <a href="">Lifestyle</a>
-                        </li>
-                        <li>
-                            <a href="">Materials</a>
-                        </li>
-                        <li>
-                            <a href="">Pastel</a>
-                        </li>
-                        <li>
-                            <a href="">Pearls</a>
-                        </li>
-                        <li>
-                            <a href="">Rose</a>
-                        </li>
-                        <li>
-                            <a href="">Silver</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-12 col-lg-9">
-                <div class="d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center mb-3">
-                    <div>
-                        <p class="mb-0">Showing 1–9 of 97 results</p>
-                    </div>
-                    <div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle"
-                                    type="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                Son gələnlər
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Son gələnlər</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Ada görə: A-Z</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Ada görə: Z-A</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Qiymətə görə: azdan-çoxa</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Qiymətə görə: çoxdan-aza</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-1.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-1.1.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-2.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-2.2.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-3.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/blog-img-11.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-4.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-4.2.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-1.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-1.1.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-3.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/blog-img-11.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-2.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-2.2.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-3.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/blog-img-11.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
-                        <div class="product">
-                            <div class="product-image">
-                                <img src="images/product-img-4.jpg" alt="img" />
-                            </div>
-                            <div class="content">
-                                <div class="d-flex justify-content-between align-items-center position-relative">
-                                    <a href="product-detail.html">Circle Necklace</a>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <div class="categorie">
-                                        <h5>Accessories / Bracelests</h5>
-                                    </div>
-                                    <div class="price">
-                                        <p>52.00$</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hover-image">
-                                <img src="images/product-img-4.2.jpg" alt="img" />
-                            </div>
-                            <div class="more-detail">
-                                <a href="product-detail.html">more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="d-flex align-items-center justify-content-center">
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+	<div class="container-desc">
+		<div class="row flex-column-reverse flex-lg-row">
+			<div class="col-12 col-lg-3 mt-5 mt-lg-0">
+				<div class="position-relative w-100 mb-3">
+					<form method="get" asp-action="Index">
+						<input type="text" name="search" placeholder="Search" value="@ViewBag.Search" />
+						<button style="border: none; background-color: transparent;" type="submit">
+							<i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</div>
+				<div class="categories d-flex flex-column align-items-start mb-3">
+					<h5>Categories</h5>
+					<ul class="d-flex flex-column align-items-start gap-2">
+						@foreach (var item in Model.Categories)
+						{
+							<li>
+								<a asp-action="Index" asp-route-categoryId="@item.Id">@item.Name</a>
+							</li>
+						}
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-lg-9">
+				<div class="d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center mb-3">
+					<div>
+						<p class="mb-0">
+							Showing @ViewBag.CurrentShowing of @ViewBag.TotalProducts results
+						</p>
+
+					</div>
+					<form style="display: flex; align-items: center" asp-action="Index" method="get">
+						<select style="width: auto" class="form-select" name="select">
+							<option value="name_asc">Ada görə: A-Z</option>
+							<option value="name_desc">Ada görə: Z-A</option>
+							<option value="price_asc">Qiymətə görə: azdan-çoxa</option>
+							<option value="price_desc">Qiymətə görə: çoxdan-aza</option>
+						</select>
+						<button style="border: none; padding: 7px" type="submit">Axtar</button>
+					</form>
+
+				</div>
+				<div class="row">
+					@foreach (var item in Model.Products)
+					{
+						<div class="shop-card d-flex align-items-center justify-content-center col-12 col-lg-4 col-md-6">
+							<div class="product">
+								<div class="product-image">
+									<img src="@item.Image" alt="img" />
+								</div>
+								<div class="content">
+									<div class="d-flex justify-content-between align-items-center position-relative">
+										<a asp-route-id="@item.Id" asp-action="ProductDetail">@item.Name</a>
+										<form asp-controller="Wishlist" asp-action="Add" method="post">
+											<input type="hidden" name="productId" value="@item.Id" />
+											<button style="border: none; background-color: transparent;" type="submit"><i style="color: @(item.isLike == false ? "" : "#FF0000")" class="@(item.isLike == false ? "fa-regular fa-heart" : "fas fa-heart")"></i></button>
+										</form>
+									</div>
+									<div class="d-flex align-items-start flex-column">
+										<div class="categorie">
+											@foreach (var pro in item.Categories)
+											{
+												if (pro != item.Categories.Last())
+												{
+													<span>@pro.Name /</span>
+												}
+												else
+												{
+													<span>@pro.Name</span>
+												}
+											}
+										</div>
+										<div class="price">
+											<p>@item.Price $</p>
+										</div>
+									</div>
+								</div>
+								<div class="hover-image">
+									<img src="@item.hoverImage" alt="img" />
+								</div>
+								<div class="more-detail">
+									<a asp-route-id="@item.Id" asp-action="ProductDetail">
+										<span>more</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					}
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="d-flex align-items-center justify-content-center">
+		<ul class="pagination">
+			@for (int i = 1; i <= ViewBag.PageCount; i++)
+			{
+				if (i == ViewBag.Page)
+				{
+					<li class="page-item active"><a class="page-link" href="/Shop/Index?page=@i">@i</a></li>
+				}
+				else
+				{
+					<li class="page-item"><a class="page-link" href="/Shop/Index?page=@i">@i</a></li>
+				}
+			}
+		</ul>
+	</nav>
 </div>
 
 <!--shop end -->
-

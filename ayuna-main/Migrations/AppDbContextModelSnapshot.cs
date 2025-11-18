@@ -506,6 +506,37 @@ namespace ayuna_main.Migrations
                     b.ToTable("contactSubmit");
                 });
 
+            modelBuilder.Entity("ayuna_main.Models.DetailDescription", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DescriptionOne")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DescriptionTwo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TitleOne")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TitleTwo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId")
+                        .IsUnique();
+
+                    b.ToTable("detailDescription");
+                });
+
             modelBuilder.Entity("ayuna_main.Models.FooterCategory", b =>
                 {
                     b.Property<int>("Id")
@@ -703,6 +734,15 @@ namespace ayuna_main.Migrations
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageOne")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageThree")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageTwo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -712,6 +752,9 @@ namespace ayuna_main.Migrations
 
                     b.Property<string>("hoverImage")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isLike")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
@@ -736,6 +779,40 @@ namespace ayuna_main.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("sliders");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Testimonial", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Star")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId")
+                        .IsUnique();
+
+                    b.ToTable("testimonials");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Wishlist", b =>
@@ -852,6 +929,28 @@ namespace ayuna_main.Migrations
                     b.Navigation("Blog");
                 });
 
+            modelBuilder.Entity("ayuna_main.Models.DetailDescription", b =>
+                {
+                    b.HasOne("ayuna_main.Models.Product", "Product")
+                        .WithOne("DetailDescription")
+                        .HasForeignKey("ayuna_main.Models.DetailDescription", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Testimonial", b =>
+                {
+                    b.HasOne("ayuna_main.Models.Product", "Product")
+                        .WithOne("Testimonial")
+                        .HasForeignKey("ayuna_main.Models.Testimonial", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("ayuna_main.Models.Wishlist", b =>
                 {
                     b.HasOne("ayuna_main.Models.Product", "Product")
@@ -866,6 +965,15 @@ namespace ayuna_main.Migrations
             modelBuilder.Entity("ayuna_main.Models.Blog", b =>
                 {
                     b.Navigation("Detail")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ayuna_main.Models.Product", b =>
+                {
+                    b.Navigation("DetailDescription")
+                        .IsRequired();
+
+                    b.Navigation("Testimonial")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

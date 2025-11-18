@@ -128,7 +128,6 @@ namespace ayuna_main.Areas.Admin.Controllers
 		}
 
 		[HttpPost, ActionName("Delete")]
-
 		public IActionResult DeleteConfirm(int id)
 		{
 			if (id == null)

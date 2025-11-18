@@ -30,6 +30,7 @@ namespace ayuna_main.Controllers
 			var users = await _userManager.GetUserAsync(User);
 
 			bool isStock = _db.wishlist.Any(x => x.ProductId == productId && x.UserId == users.Id);
+			var product = _db.products.FirstOrDefault(x => x.Id == productId);
 
 			if (!isStock)
 			{
@@ -39,9 +40,22 @@ namespace ayuna_main.Controllers
 					UserId = users.Id,
 				};
 				await _db.wishlist.AddAsync(item);
+		        product.isLike = true;
 				await _db.SaveChangesAsync();
 			}
-			return RedirectToAction("Index", "Home");
+			else
+			{
+				var removePro = _db.wishlist
+					.FirstOrDefault(x => x.ProductId == productId && x.UserId == users.Id);
+
+				if (removePro != null)
+				{
+					_db.wishlist.Remove(removePro);
+					removePro.Product.isLike = false;
+					await _db.SaveChangesAsync();
+				}
+			}
+			return RedirectToAction("Index");
 		}
 
 		public IActionResult Delete(int id)

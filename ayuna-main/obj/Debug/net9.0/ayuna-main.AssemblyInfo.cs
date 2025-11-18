@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ayuna-main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc278bffb3d2b9feb449450239797b87f8fc659c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61954d4f344eb2982361db34e40bb82658ee5775")]
 [assembly: System.Reflection.AssemblyProductAttribute("ayuna-main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ayuna-main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
