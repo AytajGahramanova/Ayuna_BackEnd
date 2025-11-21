@@ -16,6 +16,10 @@
 		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Price" type="text" class="form-control">
 	</div>
 	<div class="mb-3">
+		<label class="form-label">Description</label>
+		<input style="border: 1px solid gray; max-width: 700px; padding: 10px;" asp-for="Description" type="text" class="form-control">
+	</div>
+	<div class="mb-3">
 		<label asp-for="formFile" class="form-label">Image</label>
 		<input asp-for="formFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
 	</div>
@@ -23,10 +27,20 @@
 		<label asp-for="hoverFormFile" class="form-label">HoverImage</label>
 		<input asp-for="hoverFormFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
 	</div>
+	<div class="mb-3">
+		<label asp-for="ImageOneFormFile" class="form-label">ImageOne</label>
+		<input asp-for="ImageOneFormFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
+	</div>	<div class="mb-3">
+		<label asp-for="ImageTwoFormFile" class="form-label">ImageTwo</label>
+		<input asp-for="ImageTwoFormFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
+	</div>	<div class="mb-3">
+		<label asp-for="ImageThreeFormFile" class="form-label">ImageThree</label>
+		<input asp-for="ImageThreeFormFile" type="file" style="border: 1px solid gray; max-width: 700px; padding: 10px;" class="form-control">
+	</div>
 	@foreach (var item in ViewBag.Categories)
 	{
 		<div>
-			<input type="checkbox" name="CategoryId" value="@item.Id"/>
+			<input type="checkbox" name="CategoryId" value="@item.Id" />
 			<label>@item.Name</label>
 		</div>
 	}

@@ -29,7 +29,8 @@
 				<div class="user">
 					<a asp-controller="Account" asp-action="Login"><i class="fa-regular fa-user"></i></a>
 				</div>
-			} else
+			}
+			else
 			{
 				<p class="mb-0">@User.Identity.Name</p>
 				<a asp-controller="Account" asp-action="LogOut">LogOut</a>
@@ -78,9 +79,14 @@
 	<ul class="container-desc d-flex align-items-center justify-content-center gap-4">
 		@foreach (HeaderNav item in Model.headerNavs)
 		{
-			<li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == item.Link ? "active-link" : "")">
-				<a asp-controller="@item.Link" asp-action="Index" class="nav-link">@item.Link</a>
+			<li class="nav-item">
+				<a asp-controller="@item.Link"
+				   asp-action="Index"
+				   class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == item.Link ? "active-link" : "")">
+					@item.Link
+				</a>
 			</li>
-		}		
+
+		}
 	</ul>
 </nav>

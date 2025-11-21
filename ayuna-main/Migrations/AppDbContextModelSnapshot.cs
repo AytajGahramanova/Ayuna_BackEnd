@@ -731,6 +731,10 @@ namespace ayuna_main.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
@@ -801,6 +805,10 @@ namespace ayuna_main.Migrations
                     b.Property<int?>("Star")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
@@ -811,6 +819,8 @@ namespace ayuna_main.Migrations
 
                     b.HasIndex("ProductId")
                         .IsUnique();
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("testimonials");
                 });
@@ -948,7 +958,15 @@ namespace ayuna_main.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("ayuna_main.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ayuna_main.Models.Wishlist", b =>

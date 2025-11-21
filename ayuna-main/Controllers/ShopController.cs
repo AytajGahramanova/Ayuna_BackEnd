@@ -1,4 +1,5 @@
 ﻿using ayuna_main.DataAccessLayer;
+using ayuna_main.Models;
 using ayuna_main.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -68,6 +69,37 @@ namespace ayuna_main.Controllers
 				Categories = category
 			};
 			return View(shopVM);
+		}
+
+		public IActionResult ProductDetail(int id)
+		{
+			if (id == null)
+			{
+				return RedirectToAction("Index", "Error");
+			}
+
+			var product = _db.products
+		.Include(x => x.Categories)
+		.Include(x => x.Testimonial)
+		.Include(x => x.DetailDescription)
+		.FirstOrDefault(x => x.Id == id);
+
+			if (product == null)
+			{
+				return RedirectToAction("Index", "Error");
+			}
+
+			ProductDetailVM productDetailVM = new ProductDetailVM
+			{
+				product = product,
+				products = _db.products.ToList(),
+				categories = _db.category.ToList(),
+				testimonial = new Testimonial(),
+				testimonials = _db.testimonials.Where(t => t.ProductId == id).ToList(),
+				detailDescription = product.DetailDescription,
+			};
+
+			return View(productDetailVM);
 		}
 	}
 }

@@ -7,510 +7,511 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayuna - Product-details</title>
-    <link rel="icon" href="assets/images/logo-white.png" />
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-          crossorigin="anonymous" />
-    <!-- font awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" />
-    <!-- swiper -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Fancybox -->
-    <link rel="stylesheet"
-          href='@("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")' />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ayuna - Product-details</title>
+	<link rel="icon" href="assets/images/logo-white.png" />
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+		  crossorigin="anonymous" />
+	<!-- font awesome -->
+	<link rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		  crossorigin="anonymous"
+		  referrerpolicy="no-referrer" />
+	<!-- swiper -->
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- Fancybox -->
+	<link rel="stylesheet"
+		  href='@("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")' />
 
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/product-detail.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/product-detail.css" />
 </head>
 <body>
-    <!-- scroll top start -->
-    <button class="page-scroll-button d-flex align-items-center justify-content-center">
-        <i class="fa-solid fa-chevron-up"></i>
-    </button>
-    <!-- scroll top end -->
-    <!-- breadcrumb start -->
-    <section class="breadcrumb-section">
-        <div class="breadcrumb">
-            <a href="index.html">Home / </a>
-            <a href="#">Product-details</a>
-        </div>
-        <div class="layer"></div>
-    </section>
-    <!-- breadcrumb end -->
-    <!-- product-details start -->
-    <div class="shop-wrapper mt-5">
-        <div class="container-desc">
-            <div class="row flex-column-reverse flex-lg-row">
-                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <div style="
+	<!-- scroll top start -->
+	<button class="page-scroll-button d-flex align-items-center justify-content-center">
+		<i class="fa-solid fa-chevron-up"></i>
+	</button>
+	<!-- scroll top end -->
+	<!-- breadcrumb start -->
+	<section class="breadcrumb-section">
+		<div class="breadcrumb">
+			<a href="index.html">Home / </a>
+			<a href="#">Product-details</a>
+		</div>
+		<div class="layer"></div>
+	</section>
+	<!-- breadcrumb end -->
+	<!-- product-details start -->
+	<div class="shop-wrapper mt-5">
+		<div class="container-desc">
+			<div class="row flex-column-reverse flex-lg-row">
+				<div class="col-12 col-lg-6 mt-5 mt-lg-0">
+					<div style="
                 --swiper-navigation-color: #fff;
                 --swiper-pagination-color: #fff;
               "
-                         class="swiper detailSwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.Image" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageOne" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageTwo" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageThree" alt="img" />
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                    <div thumbsSlider="" class="swiper detailSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.Image" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageOne" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageTwo" alt="img" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="~/images/@Model.product.ImageThree" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="product-content d-flex flex-column gap-2">
-                        <div>
-                            <h3 class="name">Circle Necklace</h3>
-                            <p class="categorie mb-0">Accessories / Bracelests</p>
-                        </div>
-                        <div>
-                            <span class="price">54.00 ₼</span>
-                            <h5 class="about mt-4">
-                                Lorem Ipsum estibulum blandit libero at mauris condimentum
-                                males uada scelerisque in mauris ut malesuada. Lorem Ipsum
-                                estibulum blandit libero at mauris condimentum males uada
-                                scelerisque in mauris ut malesuada. Lorem Ipsum estibulum
-                                blandit libero at mauris condimentum males uada scelerisque in
-                                mauris ut malesuada.
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-lg-row align-items-start gap-3 mt-4 align-items-lg-center justify-content-between">
-                        <div class="quantity-buttons">
-                            <button class="decrement">-</button>
-                            <input disabled value="1" class="counter" />
-                            <button class="increment">+</button>
-                        </div>
-                        <div class="d-flex align-items-center gap-2">
-                            <div class="add-cart">
-                                <button>Add to cart</button>
-                            </div>
-                            <div class="add-wishlist">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--product-details end -->
-    <!-- testimonial section start -->
-    <section class="testimonial-section position-relative">
-        <div class="container-desc">
-            <div class="title text-center">
-                <h3>Kind Words</h3>
-            </div>
-            <div class="swiper mySwiper position-absolute">
-                <div class="swiper-wrapper d-flex align-items-center">
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Mauris ut malesuada orem Ipsum estibulum ondimentum mal es
-                                uid scelerisque in blandit libero atmis."
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Anna Heelou</p>
-                            <span> Los Angeles , 3 year ago</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Condimentum males uada sceleris que in mauris ut malesuada
-                                orem Ipsum estibulum blandit libero at."
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Michel Wooud</p>
-                            <span> Los Angeles , 3 year ago</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Lorem Ipsum estibulum blandit lib ero at mauris condimentum
-                                malui da scelerisque in mauris ut malda.'
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Monica Stoung</p>
-                            <span> New York , 3 year ago</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Mauris ut malesuada orem Ipsum estibulum ondimentum mal es
-                                uid scelerisque in blandit libero atmis."
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Anna Heelou</p>
-                            <span> Los Angeles , 3 year ago</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Condimentum males uada sceleris que in mauris ut malesuada
-                                orem Ipsum estibulum blandit libero at."
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Michel Wooud</p>
-                            <span> Los Angeles , 3 year ago</span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex flex-column">
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <h4>
-                                "Lorem Ipsum estibulum blandit lib ero at mauris condimentum
-                                malui da scelerisque in mauris ut malda.'
-                            </h4>
-                        </div>
-                        <div>
-                            <p>Monica Stoung</p>
-                            <span> New York , 3 year ago</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial section end -->
-    <!-- product info start -->
-    <div class="product-info mb-5 mt-5">
-        <!-- Nav tabs -->
-        <ul class="product-tabs nav nav-tabs d-flex align-items-center justify-content-center gap-5"
-            id="myTab"
-            role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active"
-                        id="home-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#home"
-                        type="button"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true">
-                    Description
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link"
-                        id="profile-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#profile"
-                        type="button"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false">
-                    Review
-                </button>
-            </li>
-        </ul>
+						 class="swiper detailSwiper2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.Image" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageOne" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageTwo" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageThree" alt="img" />
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div thumbsSlider="" class="swiper detailSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.Image" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageOne" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageTwo" alt="img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="~/images/@Model.product.ImageThree" alt="img" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="product-content d-flex flex-column gap-2">
+						<div>
+							<h3 class="name">Circle Necklace</h3>
+							<p class="categorie mb-0">Accessories / Bracelests</p>
+						</div>
+						<div>
+							<span class="price">54.00 ₼</span>
+							<h5 class="about mt-4">
+								Lorem Ipsum estibulum blandit libero at mauris condimentum
+								males uada scelerisque in mauris ut malesuada. Lorem Ipsum
+								estibulum blandit libero at mauris condimentum males uada
+								scelerisque in mauris ut malesuada. Lorem Ipsum estibulum
+								blandit libero at mauris condimentum males uada scelerisque in
+								mauris ut malesuada.
+							</h5>
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row align-items-start gap-3 mt-4 align-items-lg-center justify-content-between">
+						<div class="quantity-buttons">
+							<button class="decrement">-</button>
+							<input disabled value="1" class="counter" />
+							<button class="increment">+</button>
+						</div>
+						<div class="d-flex align-items-center gap-2">
+							<div class="add-cart">
+								<button>Add to cart</button>
+							</div>
+							<div class="add-wishlist">
+								<i class="fa-regular fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--product-details end -->
+	<!-- testimonial section start -->
+	<section class="testimonials-section">
+		<h2 class="section-title">Müşteri Yorumları</h2>
 
-        <!-- Tab panes -->
-        <div class="tab-content d-flex align-items-center p-3">
-            <div class="tab-pane active"
-                 id="home"
-                 role="tabpanel"
-                 aria-labelledby="home-tab"
-                 tabindex="0">
-                <div class="container-desc d-flex justify-content-between gap-3 gap-lg-5 flex-column flex-lg-row">
-                    <div>
-                        <h3>About design</h3>
-                        <p class="mb-2">
-                            Lorem Ipsum estibulum blandit libero at mauris condimentum
-                            scelerisque. In scelerisque in mauris ut malesuada. Nam sodales
-                            scelerisque ipsum sed vestibulum. Aliquam euismod mi vitae nibh
-                            placerat.
-                        </p>
-                        <p>
-                            Ut venenatis iaculis iaculis. Integer sit amet auctor justo, ac
-                            vestibulum orci. Aenean ultrices magna at porttitor eleifend.
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Summer Collection</h3>
-                        <p>
-                            Lorem Ipsum estibulum blandit libero at mauris condimentum
-                            scelerisque. In scelerisque in mauris ut malesuada. Nam sodales
-                            scelerisque ipsum sed vestib.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane w-100"
-                 id="profile"
-                 role="tabpanel"
-                 aria-labelledby="profile-tab"
-                 tabindex="0">
-                <div class="container-desc">
-                    <form>
-                        <div class="mb-4">
-                            <p class="mb-2">Your Rating</p>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <textarea class="mb-4">Your comment</textarea>
-                        <div class="d-flex flex-column gap-5">
-                            <input type="text" placeholder="Your name" />
-                            <input type="text" placeholder="Your location" />
-                        </div>
-                        <button class="mt-5" type="submit">
-                            <span>Submit</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- product info end-->
-    </div>
+		<div class="container-desc testimonials-container">
+			@foreach (var item in Model.testimonials)
+			{
+				<div class="testimonial-card">
+					<div class="rating">
+						@for (int i = 1; i <= 5; i++)
+						{
+							if (i <= item.Star)  
+							{
+								<i class="fas fa-star text-warning"></i>
+								
+							}
+							else
+							{
+								<i class="far fa-star text-warning"></i>
+								
+							}
+						}
+					</div>
+				
+				<p class="testimonial-text">
+					"@item.Comment"
+				</p>
+				<div class="user-info">
+					<div class="user-avatar">AH</div>
+					<div class="user-details">
+						<div class="user-name">@item.UserName</div>
+						<div class="user-location">@item.Location</div>
+						<div class="time-ago">@item.dateTime</div>
+						<div class="verified-badge">
+							<i class="fas fa-check-circle"></i> Doğrulanmış Satın Alma
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+			
+		</div>
+	</section>
+	<!-- testimonial section end -->
+	<!-- product info start -->
+	<div class="product-info mb-5 mt-5">
+		<!-- Nav tabs -->
+		<ul class="product-tabs nav nav-tabs d-flex align-items-center justify-content-center gap-5"
+			id="myTab"
+			role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active"
+						id="home-tab"
+						data-bs-toggle="tab"
+						data-bs-target="#home"
+						type="button"
+						role="tab"
+						aria-controls="home"
+						aria-selected="true">
+					Description
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link"
+						id="profile-tab"
+						data-bs-toggle="tab"
+						data-bs-target="#profile"
+						type="button"
+						role="tab"
+						aria-controls="profile"
+						aria-selected="false">
+					Review
+				</button>
+			</li>
+		</ul>
 
-    <!-- related product start-->
-    <section class="product-section">
-        <div class="title text-center mb-4">
-            <h3>Realted Products</h3>
-        </div>
-        <div class="container-desc d-flex align-items-end flex-wrap flex-column">
-            <div class="row d-flex justify-content-center justify-content-lg-between">
-                <div class="product col-12 col-lg-3">
-                    <div class="product-image">
-                        <img src="assets/images/product-img-1.jpg" alt="img" />
-                    </div>
-                    <div class="content">
-                        <div class="d-flex justify-content-between align-items-center position-relative">
-                            <a href="product-detail.html">Circle Necklace</a>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="categorie">
-                            <h5>Accessories / Bracelests</h5>
-                        </div>
-                        <div class="price">
-                            <p>52.00$</p>
-                        </div>
-                    </div>
-                    <div class="hover-image">
-                        <img src="assets/images/product-img-1.1.jpg" alt="img" />
-                    </div>
-                    <div class="more-detail">
-                        <a href="product-detail.html">Select options</a>
-                    </div>
-                </div>
-                <div class="product col-12 col-lg-3">
-                    <div class="product-image">
-                        <img src="assets/images/product-img-2.jpg" alt="img" />
-                    </div>
-                    <div class="content">
-                        <div class="d-flex justify-content-between align-items-center position-relative">
-                            <a href="product-detail.html">Circle Necklace</a>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="categorie">
-                            <h5>Accessories / Bracelests</h5>
-                        </div>
-                        <div class="price">
-                            <p>52.00$</p>
-                        </div>
-                    </div>
-                    <div class="hover-image">
-                        <img src="assets/images/product-img-2.2.jpg" alt="img" />
-                    </div>
-                    <div class="more-detail">
-                        <a href="product-detail.html">Select options</a>
-                    </div>
-                </div>
-                <div class="product col-12 col-lg-3">
-                    <div class="product-image">
-                        <img src="assets/images/product-img-3.jpg" alt="img" />
-                    </div>
-                    <div class="content">
-                        <div class="d-flex justify-content-between align-items-center position-relative">
-                            <a href="product-detail.html">Circle Necklace</a>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="categorie">
-                            <h5>Accessories / Bracelests</h5>
-                        </div>
-                        <div class="price">
-                            <p>52.00$</p>
-                        </div>
-                    </div>
-                    <div class="hover-image">
-                        <img src="assets/images/blog-img-11.jpg" alt="img" />
-                    </div>
-                    <div class="more-detail">
-                        <a href="product-detail.html">Select options</a>
-                    </div>
-                </div>
-                <div class="product col-12 col-lg-3">
-                    <div class="product-image">
-                        <img src="assets/images/product-img-4.jpg" alt="img" />
-                    </div>
-                    <div class="content">
-                        <div class="d-flex justify-content-between align-items-center position-relative">
-                            <a href="product-detail.html">Circle Necklace</a>
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                        <div class="categorie">
-                            <h5>Accessories / Bracelests</h5>
-                        </div>
-                        <div class="price">
-                            <p>52.00$</p>
-                        </div>
-                    </div>
-                    <div class="hover-image">
-                        <img src="assets/images/product-img-4.2.jpg" alt="img" />
-                    </div>
-                    <div class="more-detail">
-                        <a href="product-detail.html">Select options</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- related product end-->
+		<!-- Tab panes -->
+		<div class="tab-content d-flex align-items-center p-3">
+			<div class="tab-pane active"
+				 id="home"
+				 role="tabpanel"
+				 aria-labelledby="home-tab"
+				 tabindex="0">
+				<div class="container-desc d-flex justify-content-between gap-3 gap-lg-5 flex-column flex-lg-row">
+					<div>
+						<h3>About design</h3>
+						<p class="mb-2">
+							Lorem Ipsum estibulum blandit libero at mauris condimentum
+							scelerisque. In scelerisque in mauris ut malesuada. Nam sodales
+							scelerisque ipsum sed vestibulum. Aliquam euismod mi vitae nibh
+							placerat.
+						</p>
+						<p>
+							Ut venenatis iaculis iaculis. Integer sit amet auctor justo, ac
+							vestibulum orci. Aenean ultrices magna at porttitor eleifend.
+						</p>
+					</div>
+					<div>
+						<h3>Summer Collection</h3>
+						<p>
+							Lorem Ipsum estibulum blandit libero at mauris condimentum
+							scelerisque. In scelerisque in mauris ut malesuada. Nam sodales
+							scelerisque ipsum sed vestib.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane w-100"
+				 id="profile"
+				 role="tabpanel"
+				 aria-labelledby="profile-tab"
+				 tabindex="0">
+				<div class="container-desc">
+					<form asp-controller="Home" asp-action="CommentCreate">
+						<div class="rating" data-product-id="@Model.product.Id">
+							<p>Your Rating</p>
+							<i data-value="1" class="fa-regular fa-star star"></i>
+							<i data-value="2" class="fa-regular fa-star star"></i>
+							<i data-value="3" class="fa-regular fa-star star"></i>
+							<i data-value="4" class="fa-regular fa-star star"></i>
+							<i data-value="5" class="fa-regular fa-star star"></i>
+						</div>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-    <!-- font awesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
-            integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- fancybox js -->
-    <script src='@("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js")'></script>
+						<input type="hidden" id="ratingInput" name="rating" />
+						<input type="hidden" name="proId" value="@Model.product.Id" />
 
-    <script src="assets/script.js"></script>
-    <script>
-        var swiper = new Swiper(".detailSwiper", {
-          loop: true,
-          spaceBetween: 10,
-          slidesPerView: 4,
-          freeMode: true,
-          watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".detailSwiper2", {
-          loop: true,
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          thumbs: {
-            swiper: swiper,
-          },
-        });
-    </script>
-    <script>
-        const quantityWrappers = document.querySelectorAll(".quantity-buttons");
+						<textarea asp-for="@Model.testimonial.Comment" class="mb-4"></textarea>
+						<div class="d-flex flex-column gap-5">
+							<input asp-for="@Model.testimonial.UserName" placeholder="Your name" />
+							<input asp-for="@Model.testimonial.Location" placeholder="Your location" />
+						</div>
+						<button class="mt-5" type="submit">
+							<span>Submit</span>
+						</button>
+					</form>
 
-        quantityWrappers.forEach((wrapper) => {
-          const decrementBtn = wrapper.querySelector(".decrement");
-          const incrementBtn = wrapper.querySelector(".increment");
-          const input = wrapper.querySelector(".counter");
+				</div>
+			</div>
+		</div>
+		<!-- product info end-->
+	</div>
 
-          decrementBtn.addEventListener("click", () => {
-            let value = parseInt(input.value);
-            if (value > 1) {
-              input.value = value - 1;
-            }
-          });
+	<!-- related product start-->
+	<section class="product-section">
+		<div class="title text-center mb-4">
+			<h3>Realted Products</h3>
+		</div>
+		<div class="container-desc d-flex align-items-end flex-wrap flex-column">
+			<div class="row d-flex justify-content-center justify-content-lg-between">
+				<div class="product col-12 col-lg-3">
+					<div class="product-image">
+						<img src="assets/images/product-img-1.jpg" alt="img" />
+					</div>
+					<div class="content">
+						<div class="d-flex justify-content-between align-items-center position-relative">
+							<a href="product-detail.html">Circle Necklace</a>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+						<div class="categorie">
+							<h5>Accessories / Bracelests</h5>
+						</div>
+						<div class="price">
+							<p>52.00$</p>
+						</div>
+					</div>
+					<div class="hover-image">
+						<img src="assets/images/product-img-1.1.jpg" alt="img" />
+					</div>
+					<div class="more-detail">
+						<a href="product-detail.html">Select options</a>
+					</div>
+				</div>
+				<div class="product col-12 col-lg-3">
+					<div class="product-image">
+						<img src="assets/images/product-img-2.jpg" alt="img" />
+					</div>
+					<div class="content">
+						<div class="d-flex justify-content-between align-items-center position-relative">
+							<a href="product-detail.html">Circle Necklace</a>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+						<div class="categorie">
+							<h5>Accessories / Bracelests</h5>
+						</div>
+						<div class="price">
+							<p>52.00$</p>
+						</div>
+					</div>
+					<div class="hover-image">
+						<img src="assets/images/product-img-2.2.jpg" alt="img" />
+					</div>
+					<div class="more-detail">
+						<a href="product-detail.html">Select options</a>
+					</div>
+				</div>
+				<div class="product col-12 col-lg-3">
+					<div class="product-image">
+						<img src="assets/images/product-img-3.jpg" alt="img" />
+					</div>
+					<div class="content">
+						<div class="d-flex justify-content-between align-items-center position-relative">
+							<a href="product-detail.html">Circle Necklace</a>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+						<div class="categorie">
+							<h5>Accessories / Bracelests</h5>
+						</div>
+						<div class="price">
+							<p>52.00$</p>
+						</div>
+					</div>
+					<div class="hover-image">
+						<img src="assets/images/blog-img-11.jpg" alt="img" />
+					</div>
+					<div class="more-detail">
+						<a href="product-detail.html">Select options</a>
+					</div>
+				</div>
+				<div class="product col-12 col-lg-3">
+					<div class="product-image">
+						<img src="assets/images/product-img-4.jpg" alt="img" />
+					</div>
+					<div class="content">
+						<div class="d-flex justify-content-between align-items-center position-relative">
+							<a href="product-detail.html">Circle Necklace</a>
+							<i class="fa-regular fa-heart"></i>
+						</div>
+						<div class="categorie">
+							<h5>Accessories / Bracelests</h5>
+						</div>
+						<div class="price">
+							<p>52.00$</p>
+						</div>
+					</div>
+					<div class="hover-image">
+						<img src="assets/images/product-img-4.2.jpg" alt="img" />
+					</div>
+					<div class="more-detail">
+						<a href="product-detail.html">Select options</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- related product end-->
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"></script>
+	<!-- font awesome -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+			integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+	<!-- swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- fancybox js -->
+	<script src='@("https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js")'></script>
 
-          incrementBtn.addEventListener("click", () => {
-            let value = parseInt(input.value);
-            input.value = value + 1;
-          });
-        });
-    </script>
+	<script src="assets/script.js"></script>
+	<script>
+		var swiper = new Swiper(".detailSwiper", {
+		  loop: true,
+		  spaceBetween: 10,
+		  slidesPerView: 4,
+		  freeMode: true,
+		  watchSlidesProgress: true,
+		});
+		var swiper2 = new Swiper(".detailSwiper2", {
+		  loop: true,
+		  spaceBetween: 10,
+		  navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		  thumbs: {
+			swiper: swiper,
+		  },
+		});
+	</script>
+	<script>
+		const quantityWrappers = document.querySelectorAll(".quantity-buttons");
+
+		quantityWrappers.forEach((wrapper) => {
+		  const decrementBtn = wrapper.querySelector(".decrement");
+		  const incrementBtn = wrapper.querySelector(".increment");
+		  const input = wrapper.querySelector(".counter");
+
+		  decrementBtn.addEventListener("click", () => {
+			let value = parseInt(input.value);
+			if (value > 1) {
+			  input.value = value - 1;
+			}
+		  });
+
+		  incrementBtn.addEventListener("click", () => {
+			let value = parseInt(input.value);
+			input.value = value + 1;
+		  });
+		});
+	</script>
+	@* <script>
+			document.addEventListener("DOMContentLoaded", function () {
+			const ratingBox = document.querySelector('.rating');
+			const productId = ratingBox.getAttribute('data-product-id');
+			const stars = Array.from(document.querySelectorAll('.rating .star'));
+
+			function setStars(value) {
+				stars.forEach((s, i) => {
+					if (i < value) {
+						s.classList.add('fa-solid');
+						s.classList.remove('fa-regular');
+					} else {
+						s.classList.add('fa-regular');
+						s.classList.remove('fa-solid');
+					}
+				});
+			}
+
+			stars.forEach(star => {
+				star.addEventListener('click', function () {
+					const value = Number(star.getAttribute('data-value'));
+					setStars(value);
+
+					fetch('/Rating/Rate', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({ productId: productId, rating: value })
+					});
+				});
+			});
+		});
+
+
+
+	</script> *@
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const ratingBox = document.querySelector('.rating');
+			const productId = ratingBox.dataset.productId;
+			const stars = Array.from(document.querySelectorAll('.rating .star'));
+			const ratingInput = document.querySelector("#ratingInput");
+
+			// Ulduzları boyayan funksiya
+			function setStars(value) {
+				stars.forEach((s, i) => {
+					s.classList.toggle('fa-solid', i < value);
+					s.classList.toggle('fa-regular', i >= value);
+				});
+			}
+
+			// Click event
+			stars.forEach(star => {
+				star.addEventListener("click", function () {
+					const value = Number(this.dataset.value);
+
+					// Ulduzların vizual dəyişməsi
+					setStars(value);
+
+					// Hidden input-a yazırıq (form submit olsa controllerə gedir)
+					ratingInput.value = value;
+
+					// AJAX ilə də göndərmək istəyirsənsə:
+					fetch('/Rating/Rate', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ productId: productId, rating: value })
+					})
+					.then(res => res.json())
+					.then(data => {
+						console.log("Server response:", data);
+					});
+				});
+			});
+
+		});
+	</script>
+
+
+
 </body>
 </html>

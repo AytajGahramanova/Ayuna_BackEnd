@@ -86,7 +86,60 @@ namespace ayuna_main.Areas.Admin.Controllers
 					product.hoverImage = "/uploads/" + uniqueFileName;
 				}
 
-				
+				if (product.ImageOneFormFile != null)
+				{
+					string uploadFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+
+					if (!Directory.Exists(uploadFolder))
+						Directory.CreateDirectory(uploadFolder);
+
+					string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.ImageOneFormFile.FileName;
+
+					string filePath = Path.Combine(uploadFolder, uniqueFileName);
+
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await product.ImageOneFormFile.CopyToAsync(stream);
+					}
+
+					product.ImageOne = "/uploads/" + uniqueFileName;
+				}
+				if (product.ImageTwoFormFile != null)
+				{
+					string uploadFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+
+					if (!Directory.Exists(uploadFolder))
+						Directory.CreateDirectory(uploadFolder);
+
+					string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.ImageTwoFormFile.FileName;
+
+					string filePath = Path.Combine(uploadFolder, uniqueFileName);
+
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await product.ImageTwoFormFile.CopyToAsync(stream);
+					}
+
+					product.ImageTwo = "/uploads/" + uniqueFileName;
+				}
+				if (product.ImageThreeFormFile != null)
+				{
+					string uploadFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads");
+
+					if (!Directory.Exists(uploadFolder))
+						Directory.CreateDirectory(uploadFolder);
+
+					string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.ImageThreeFormFile.FileName;
+
+					string filePath = Path.Combine(uploadFolder, uniqueFileName);
+
+					using (var stream = new FileStream(filePath, FileMode.Create))
+					{
+						await product.ImageThreeFormFile.CopyToAsync(stream);
+					}
+
+					product.ImageThree = "/uploads/" + uniqueFileName;
+				}
 
 				_db.products.Add(product);
 				_db.SaveChanges();

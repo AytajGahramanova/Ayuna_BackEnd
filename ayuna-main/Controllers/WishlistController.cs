@@ -3,6 +3,8 @@ using ayuna_main.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 
 namespace ayuna_main.Controllers
@@ -55,20 +57,41 @@ namespace ayuna_main.Controllers
 					await _db.SaveChangesAsync();
 				}
 			}
-			return RedirectToAction("Index");
+
+			var controller = ControllerContext.RouteData.Values["controller"]?.ToString();
+
+			if (controller == "Shop")
+			{
+				return RedirectToAction("Index", "Shop");
+			}
+			if (controller == "Home")
+			{
+				return RedirectToAction("Index", "Home");
+			}
+
+			return RedirectToAction("Index", "Home");
+
+
 		}
 
-		public IActionResult Delete(int id)
+		public async Task<IActionResult> Delete(int id)
 		{
-			var item = _db.wishlist.Find(id);
+			var users = await _userManager.GetUserAsync(User);
+
+			var item = _db.wishlist
+				.Include(x => x.Product)
+				.FirstOrDefault(x => x.ProductId == id && x.UserId == users.Id);
 
 			if (item != null)
 			{
+		
 				_db.wishlist.Remove(item);
-				_db.SaveChanges();
+				item.Product.isLike = false;
+				await _db.SaveChangesAsync();
 			}
 
 			return RedirectToAction("Index");
 		}
+
 	}
 }
