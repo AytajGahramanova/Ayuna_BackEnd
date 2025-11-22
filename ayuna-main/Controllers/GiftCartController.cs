@@ -1,6 +1,8 @@
 ﻿using ayuna_main.DataAccessLayer;
 using ayuna_main.Models;
+using ayuna_main.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ayuna_main.Controllers
 {

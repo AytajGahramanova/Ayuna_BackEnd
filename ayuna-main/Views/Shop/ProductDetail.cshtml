@@ -119,9 +119,12 @@
 							<div class="add-cart">
 								<button>Add to cart</button>
 							</div>
-							<div class="add-wishlist">
-								<i class="fa-regular fa-heart"></i>
-							</div>
+							<form class="add-wishlist" asp-controller="Wishlist" asp-action="Add" method="post">
+								<input type="hidden" name="productId" value="@Model.product.Id" />
+								<button style="border: none; background-color: transparent; position: relative" type="submit">
+									<i style="color: @(Model.product.isLike == false ? "" : "#FF0000"); top:-9px; right:-13px;" class="@(Model.product.isLike == false ? "fa-regular fa-heart" : "fas fa-heart")"></i>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -162,9 +165,6 @@
 							<div class="user-name">@item.UserName</div>
 							<div class="user-location">@item.Location</div>
 							<div class="time-ago">@item.dateTime</div>
-							<div class="verified-badge">
-								<i class="fas fa-check-circle"></i> Doğrulanmış Satın Alma
-							</div>
 						</div>
 					</div>
 				</div>
@@ -179,7 +179,7 @@
 		<ul class="product-tabs nav nav-tabs d-flex align-items-center justify-content-center gap-5"
 			id="myTab"
 			role="tablist">
-			<li class="nav-item" role="presentation">
+			@* <li class="nav-item" role="presentation">
 				<button class="nav-link active"
 						id="home-tab"
 						data-bs-toggle="tab"
@@ -190,9 +190,9 @@
 						aria-selected="true">
 					Description
 				</button>
-			</li>
+			</li> *@
 			<li class="nav-item" role="presentation">
-				<button class="nav-link"
+				<button class="nav-link active"
 						id="profile-tab"
 						data-bs-toggle="tab"
 						data-bs-target="#profile"
@@ -207,7 +207,7 @@
 
 		<!-- Tab panes -->
 		<div class="tab-content d-flex align-items-center p-3">
-			<div class="tab-pane active"
+			@* <div class="tab-pane active"
 				 id="home"
 				 role="tabpanel"
 				 aria-labelledby="home-tab"
@@ -235,8 +235,8 @@
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="tab-pane w-100"
+			</div> *@
+			<div class="tab-pane w-100 active"
 				 id="profile"
 				 role="tabpanel"
 				 aria-labelledby="profile-tab"
@@ -276,100 +276,42 @@
 		<div class="title text-center mb-4">
 			<h3>Realted Products</h3>
 		</div>
-		<div class="container-desc d-flex align-items-end flex-wrap flex-column">
+		<div class="container-desc d-flex flex-wrap flex-column">
 			<div class="row d-flex justify-content-center justify-content-lg-between">
-				<div class="product col-12 col-lg-3">
-					<div class="product-image">
-						<img src="assets/images/product-img-1.jpg" alt="img" />
-					</div>
-					<div class="content">
-						<div class="d-flex justify-content-between align-items-center position-relative">
-							<a href="product-detail.html">Circle Necklace</a>
-							<i class="fa-regular fa-heart"></i>
+				@foreach (var item in Model.products.OrderByDescending(x => x.Id).Take(4))
+				{
+					<div class="product col-12 col-lg-3">
+						<div class="product-image">
+							<img src="@item.Image" alt="img" />
 						</div>
-						<div class="categorie">
-							<h5>Accessories / Bracelests</h5>
+						<div class="content">
+							<div class="d-flex justify-content-between align-items-center position-relative">
+								<a asp-route-id="@item.Id" asp-action="ProductDetail">@item.Name</a>
+								<form asp-controller="Wishlist" asp-action="Add" method="post">
+									<input type="hidden" name="productId" value="@item.Id" />
+									<button style="border: none; background-color: transparent;" type="submit"><i style="color: @(item.isLike == false ? "" : "#FF0000")" class="@(item.isLike == false ? "fa-regular fa-heart" : "fas fa-heart")"></i></button>
+								</form>
+							</div>
+							<div class="categorie">
+								@foreach (var pro in Model.product.Categories)
+								{
+									<h5>@pro.Name</h5>
+								}
+
+							</div>
+							<div class="price">
+								<p>@item.Price ₼</p>
+							</div>
 						</div>
-						<div class="price">
-							<p>52.00$</p>
+						<div class="hover-image">
+							<img src="@item.hoverImage" alt="img" />
 						</div>
-					</div>
-					<div class="hover-image">
-						<img src="assets/images/product-img-1.1.jpg" alt="img" />
-					</div>
-					<div class="more-detail">
-						<a href="product-detail.html">Select options</a>
-					</div>
-				</div>
-				<div class="product col-12 col-lg-3">
-					<div class="product-image">
-						<img src="assets/images/product-img-2.jpg" alt="img" />
-					</div>
-					<div class="content">
-						<div class="d-flex justify-content-between align-items-center position-relative">
-							<a href="product-detail.html">Circle Necklace</a>
-							<i class="fa-regular fa-heart"></i>
-						</div>
-						<div class="categorie">
-							<h5>Accessories / Bracelests</h5>
-						</div>
-						<div class="price">
-							<p>52.00$</p>
+						<div class="more-detail">
+							<a asp-route-id="@item.Id" asp-action="ProductDetail">Select options</a>
 						</div>
 					</div>
-					<div class="hover-image">
-						<img src="assets/images/product-img-2.2.jpg" alt="img" />
-					</div>
-					<div class="more-detail">
-						<a href="product-detail.html">Select options</a>
-					</div>
-				</div>
-				<div class="product col-12 col-lg-3">
-					<div class="product-image">
-						<img src="assets/images/product-img-3.jpg" alt="img" />
-					</div>
-					<div class="content">
-						<div class="d-flex justify-content-between align-items-center position-relative">
-							<a href="product-detail.html">Circle Necklace</a>
-							<i class="fa-regular fa-heart"></i>
-						</div>
-						<div class="categorie">
-							<h5>Accessories / Bracelests</h5>
-						</div>
-						<div class="price">
-							<p>52.00$</p>
-						</div>
-					</div>
-					<div class="hover-image">
-						<img src="assets/images/blog-img-11.jpg" alt="img" />
-					</div>
-					<div class="more-detail">
-						<a href="product-detail.html">Select options</a>
-					</div>
-				</div>
-				<div class="product col-12 col-lg-3">
-					<div class="product-image">
-						<img src="assets/images/product-img-4.jpg" alt="img" />
-					</div>
-					<div class="content">
-						<div class="d-flex justify-content-between align-items-center position-relative">
-							<a href="product-detail.html">Circle Necklace</a>
-							<i class="fa-regular fa-heart"></i>
-						</div>
-						<div class="categorie">
-							<h5>Accessories / Bracelests</h5>
-						</div>
-						<div class="price">
-							<p>52.00$</p>
-						</div>
-					</div>
-					<div class="hover-image">
-						<img src="assets/images/product-img-4.2.jpg" alt="img" />
-					</div>
-					<div class="more-detail">
-						<a href="product-detail.html">Select options</a>
-					</div>
-				</div>
+				}
+
 			</div>
 		</div>
 	</section>
