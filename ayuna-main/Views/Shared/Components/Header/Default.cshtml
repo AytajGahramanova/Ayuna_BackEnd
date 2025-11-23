@@ -12,7 +12,7 @@
 			</a>
 		</div>
 		<div class="h-right d-flex align-items-center gap-3 gap-lg-4">
-			<div class="dropdown">
+			@* <div class="dropdown">
 				<button class="dropdown-toggle"
 						type="button"
 						data-bs-toggle="dropdown"
@@ -22,8 +22,8 @@
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="#">En</a></li>
 					<li><a class="dropdown-item" href="#">Ru</a></li>
-				</ul>
-			</div>
+				</ul> 
+			</div> *@
 			@if (!User.Identity.IsAuthenticated)
 			{
 				<div class="user">
@@ -42,8 +42,8 @@
 				<a asp-controller="Wishlist" asp-action="Index"><i class="fa-regular fa-heart"></i></a>
 			</div>
 			<div class="shop position-relative">
-				<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-				<span class="position-absolute d-flex align-items-center justify-content-center">0</span>
+				<a asp-controller="Basket" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a>
+				@* <span class="position-absolute d-flex align-items-center justify-content-center">0</span> *@
 			</div>
 			<div>
 				<i class="d-block d-lg-none fa-solid fa-bars"

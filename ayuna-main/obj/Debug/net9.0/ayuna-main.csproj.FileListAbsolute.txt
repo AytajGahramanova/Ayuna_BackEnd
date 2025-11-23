@@ -339,7 +339,6 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\tr\Microsoft.C
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\u487tyfre2-t533bzildk.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\74f1xdka9t-s2o6hrpxsm.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\zphjfwry40-0vexwlwo87.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\78o6ae0g98-421jzqzma8.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\u6ulc3qngk-kbpam2yhfq.gz
@@ -392,6 +391,7 @@ C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.AspN
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\smopwj8itm-q0q8ovqi6d.gz
-C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\vqnlzuxb3g-5t3yvrrsyf.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\a239pmg317-61chey44kx.gz
 C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\ggweuijdla-yyq3iqqinc.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\74f1xdka9t-k7gcn5lmay.gz
+C:\Users\Asus\source\repos\ayuna-main\ayuna-main\obj\Debug\net9.0\compressed\vqnlzuxb3g-5t3yvrrsyf.gz

@@ -37,6 +37,7 @@ namespace ayuna_main.DataAccessLayer
 		
 		public DbSet<Testimonial> testimonials { get; set; }
 		public DbSet<DetailDescription> detailDescription { get; set; }
+		public DbSet<Basket> baskets { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

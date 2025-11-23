@@ -100,7 +100,7 @@
 							{
 								<p class="categorie mb-0">@item.Name</p>
 							}
-							
+
 						</div>
 						<div>
 							<span class="price">@Model.product.Price ₼</span>
@@ -117,7 +117,7 @@
 						</div>
 						<div class="d-flex align-items-center gap-2">
 							<div class="add-cart">
-								<button>Add to cart</button>
+								<a asp-route-productId="@Model.product.Id" asp-action="Add" asp-controller="Basket">Add to cart</a>
 							</div>
 							<form class="add-wishlist" asp-controller="Wishlist" asp-action="Add" method="post">
 								<input type="hidden" name="productId" value="@Model.product.Id" />
@@ -372,44 +372,6 @@
 		  });
 		});
 	</script>
-	@* <script>
-			document.addEventListener("DOMContentLoaded", function () {
-			const ratingBox = document.querySelector('.rating');
-			const productId = ratingBox.getAttribute('data-product-id');
-			const stars = Array.from(document.querySelectorAll('.rating .star'));
-
-			function setStars(value) {
-				stars.forEach((s, i) => {
-					if (i < value) {
-						s.classList.add('fa-solid');
-						s.classList.remove('fa-regular');
-					} else {
-						s.classList.add('fa-regular');
-						s.classList.remove('fa-solid');
-					}
-				});
-			}
-
-			stars.forEach(star => {
-				star.addEventListener('click', function () {
-					const value = Number(star.getAttribute('data-value'));
-					setStars(value);
-
-					fetch('/Rating/Rate', {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/json'
-						},
-						body: JSON.stringify({ productId: productId, rating: value })
-					});
-				});
-			});
-		});
-
-
-
-	</script> *@
-
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const ratingBox = document.querySelector('.rating');
@@ -430,13 +392,12 @@
 				star.addEventListener("click", function () {
 					const value = Number(this.dataset.value);
 
-					// Ulduzların vizual dəyişməsi
+
 					setStars(value);
 
-					// Hidden input-a yazırıq (form submit olsa controllerə gedir)
 					ratingInput.value = value;
 
-					// AJAX ilə də göndərmək istəyirsənsə:
+
 					fetch('/Rating/Rate', {
 						method: 'POST',
 						headers: { 'Content-Type': 'application/json' },

@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\giftcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\giftcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\giftcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\giftcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\wwwroot\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\wwwroot\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|c:\\users\\asus\\source\\repos\\ayuna-main\\ayuna-main\\views\\shop\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F39975-F97A-430A-B388-AC85FFC2DD96}|ayuna-main\\ayuna-main.csproj|solutionrelative:ayuna-main\\views\\shop\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 258,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\GiftCart\\Index.cshtml",
-              "RelativeDocumentMoniker": "ayuna-main\\Views\\GiftCart\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\GiftCart\\Index.cshtml",
-              "RelativeToolTip": "ayuna-main\\Views\\GiftCart\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml*",
+              "RelativeToolTip": "ayuna-main\\Views\\Shared\\Components\\Header\\Default.cshtml*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-22T13:28:00.301Z",
+              "WhenOpened": "2025-11-23T15:48:34.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GiftCartController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\GiftCartController.cs",
-              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\GiftCartController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\GiftCartController.cs",
-              "RelativeToolTip": "ayuna-main\\Controllers\\GiftCartController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T13:27:34.885Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Wishlist\\Index.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Wishlist\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Wishlist\\Index.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Wishlist\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T15:44:46.321Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\WishlistController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T15:44:41.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\wwwroot\\script.js",
+              "RelativeDocumentMoniker": "ayuna-main\\wwwroot\\script.js",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\wwwroot\\script.js",
+              "RelativeToolTip": "ayuna-main\\wwwroot\\script.js",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwFEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-23T15:27:58.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shop\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Shop\\ProductDetail.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Shop\\ProductDetail.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Shop\\ProductDetail.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAM0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T15:19:33.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAgwEkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T15:19:27.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Basket\\Index.cshtml",
+              "RelativeDocumentMoniker": "ayuna-main\\Views\\Basket\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Views\\Basket\\Index.cshtml",
+              "RelativeToolTip": "ayuna-main\\Views\\Basket\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAHsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T13:25:59.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "ayuna-main\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\ayuna-main\\ayuna-main\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "ayuna-main\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:24:26.75Z",
+              "EditorCaption": ""
             }
           ]
         }
